@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-brand">QuizApp</div>
+        <nav class="nav-links" id="navLinks">
+            <a href="#" class="nav-item" id="home-link">Home</a>
+            <a href="#" class="nav-item" id="history-link">History</a>
+            <a href="#" class="nav-item" id="revision-history-link">Revision History</a>
+        </nav>
+        <div class="burger-menu" id="burgerMenu">
+            &#9776; </div>
+    </header>
+
+    <div class="main-content-wrapper"> <div class="container">
+            <div id="main-content">
+                <h1>Select a Category</h1>
+                <div class="category-selection">
+                    <div class="category-box" id="network-category">
+                        <h2>Network</h2>
+                    </div>
+                    <div class="category-box" id="security-category">
+                        <h2>Security</h2>
+                    </div>
+                </div>
+
+                <div class="subcategory-selection" id="subcategory-selection">
+                    </div>
+
+                <div class="quiz-container" id="quiz-container">
+                    <div class="quiz-header">
+                        <h2 id="quiz-title"></h2>
+                        <div class="progress-info">
+                            <span id="question-count"></span>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" id="progressBar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz-content">
+                        <div class="quiz-question" id="quiz-question"></div>
+                        <ul class="options-list" id="options-list"></ul>
+                        <div id="feedback"></div>
+                        <div id="explanation"></div>
+                        <div class="quiz-navigation">
+                            <button id="next-question-btn">Next</button>
+                        </div>
+                    </div>
+                    <button class="back-to-subcategories-btn" id="back-from-quiz-btn">Back to Subcategories</button>
+                </div>
+
+                <div id="quiz-result-page" class="result-page page-hidden">
+                    <h2>Quiz Complete!</h2>
+                    <p>You scored: <span id="final-score">0</span> / <span id="total-questions">0</span></p>
+                    <p><span id="score-percentage">0%</span></p>
+                    <button class="back-to-subcategories-btn" id="result-to-subcategories-btn">Back to Subcategories</button>
+                    <button class="view-revision-btn" id="view-revision-btn">View Revision Topics</button>
+                </div>
+            </div> <div id="history-page" class="page-hidden">
+                <h2>Quiz History & Progress</h2>
+                <div id="history-content">
+                    <p>No quiz history yet. Complete a quiz to see your progress!</p>
+                </div>
+                <div class="history-actions"> <button class="back-to-main-btn" id="history-back-btn">Back to Home</button>
+                    <button class="clear-history-btn" id="clear-history-btn">Clear History</button> </div>
+            </div>
+
+            <div id="revision-page" class="page-hidden">
+                <h2>Topics to Revise from Last Quiz</h2>
+                <div id="revision-topics-content">
+                    <p>No revision topics identified for the last quiz.</p>
+                </div>
+                <button class="back-to-result-btn" id="revision-back-btn">Back to Quiz Result</button>
+            </div>
+
+            <div id="global-revision-history-page" class="page-hidden">
+                <h2>All Topics to Revise</h2>
+                <div id="global-revision-content">
+                    <p>No revision topics saved yet.</p>
+                </div>
+                <div class="history-actions"> <button class="back-to-main-btn" id="global-revision-back-btn">Back to Home</button>
+                    <button class="clear-history-btn" id="clear-global-revision-btn">Clear All Revision Topics</button> </div>
+            </div>
+
+        </div> </div>
+    
+    <footer>
+        <p id="footer-text"></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

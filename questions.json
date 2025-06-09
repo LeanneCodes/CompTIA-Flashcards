@@ -1,0 +1,90 @@
+{
+    "categories": [
+      {
+        "name": "Network",
+        "subcategories": [
+          {
+            "name": "Networking Fundamentals",
+            "quizzes": [
+              {
+                "question": "Which of the following is a private IP address?",
+                "options": ["192.168.1.1", "8.8.8.8", "172.16.0.1", "10.0.0.1"],
+                "answer": "192.168.1.1",
+                "explanation": "Private IP addresses are used within a private network and are not routable on the public internet.",
+                "topic": "IP Addressing"
+              },
+              {
+                "question": "What is the primary protocol used for sending emails?",
+                "options": ["HTTP", "FTP", "SMTP", "DNS"],
+                "answer": "SMTP",
+                "explanation": "SMTP (Simple Mail Transfer Protocol) is used for sending and receiving email messages.",
+                "topic": "Application Layer Protocols"
+              }
+            ]
+          },
+          {
+            "name": "Network Security",
+            "quizzes": [
+              {
+                "question": "What is a firewall primarily used for?",
+                "options": ["Blocking malicious traffic", "Boosting network speed", "Encrypting data", "Managing user accounts"],
+                "answer": "Blocking malicious traffic",
+                "explanation": "A firewall acts as a barrier, controlling incoming and outgoing network traffic based on predefined security rules.",
+                "topic": "Firewalls"
+              },
+              {
+                "question": "Which of the following is a common network vulnerability?",
+                "options": ["Strong passwords", "Regular software updates", "Phishing attacks", "Network segmentation"],
+                "answer": "Phishing attacks",
+                "explanation": "Phishing attacks trick users into revealing sensitive information, often by impersonating trusted entities.",
+                "topic": "Common Attacks"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Security",
+        "subcategories": [
+          {
+            "name": "Cybersecurity Basics",
+            "quizzes": [
+              {
+                "question": "What does 'malware' stand for?",
+                "options": ["Malicious software", "Memory allocation", "Master system", "Machine learning"],
+                "answer": "Malicious software",
+                "explanation": "Malware is a general term for any software designed to harm or exploit computer systems.",
+                "topic": "Malware Types"
+              },
+              {
+                "question": "What is two-factor authentication (2FA)?",
+                "options": ["Using two passwords", "A single strong password", "An extra layer of security beyond a password", "Biometric authentication only"],
+                "answer": "An extra layer of security beyond a password",
+                "explanation": "2FA requires two different forms of identification before granting access.",
+                "topic": "Authentication"
+              }
+            ]
+          },
+          {
+            "name": "Data Privacy",
+            "quizzes": [
+              {
+                "question": "What is the purpose of GDPR?",
+                "options": ["To regulate international trade", "To protect personal data and privacy", "To standardize internet protocols", "To promote open-source software"],
+                "answer": "To protect personal data and privacy",
+                "explanation": "GDPR (General Data Protection Regulation) is a legal framework that sets guidelines for the collection and processing of personal information within the European Union.",
+                "topic": "Privacy Regulations"
+              },
+              {
+                "question": "Which of the following is a best practice for protecting your data online?",
+                "options": ["Sharing personal information freely", "Using public Wi-Fi without a VPN", "Using strong, unique passwords", "Clicking on suspicious links"],
+                "answer": "Using strong, unique passwords",
+                "explanation": "Strong, unique passwords significantly reduce the risk of unauthorized access to your accounts.",
+                "topic": "Data Protection Practices"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
