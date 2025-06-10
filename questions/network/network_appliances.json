@@ -1,0 +1,535 @@
+[
+    {
+        "name": "Networking Appliances, Applications & Functions",
+        "quizzes": [
+          {
+            "question": "Which networking device is most commonly found on corporate networks and acts as the primary connection point for end-user PCs?",
+            "options": [
+              "Router",
+              "Wireless Access Point",
+              "Ethernet Network Switch",
+              "Load Balancer"
+            ],
+            "answer": "Ethernet Network Switch",
+            "explanation": "The Ethernet network switch is identified as the most prevalent device on corporate networks, directly connecting endpoints like PCs.",
+            "topic": "Commonality and Basic Function"
+          },
+          {
+            "question": "At which OSI layer do most standard Ethernet network switches primarily operate?",
+            "options": [
+              "Layer 1 (Physical Layer)",
+              "Layer 2 (Data Link Layer)",
+              "Layer 3 (Network Layer)",
+              "Layer 4 (Transport Layer)"
+            ],
+            "answer": "Layer 2 (Data Link Layer)",
+            "explanation": "Most common switches function at Layer 2 of the OSI model.",
+            "topic": "OSI Layer of Operation"
+          },
+          {
+            "question": "What type of address do Layer 2 switches use to communicate between devices on the same Local Area Network (LAN)?",
+            "options": [
+              "IP addresses",
+              "Port numbers",
+              "MAC addresses",
+              "URL addresses"
+            ],
+            "answer": "MAC addresses",
+            "explanation": "Layer 2 switches rely on MAC addresses for communication within the same physical network segment.",
+            "topic": "Addressing at Layer 2"
+          },
+          {
+            "question": "When an Ethernet switch receives data for a destination MAC address that is not in its table, what action does it take?",
+            "options": [
+              "It discards the data.",
+              "It sends an error message back to the source.",
+              "It floods the data out of all ports (except the ingress port).",
+              "It forwards the data directly to the router."
+            ],
+            "answer": "It floods the data out of all ports (except the ingress port).",
+            "explanation": "If a switch does not know the destination MAC address, it will flood the data to all ports in an attempt to find the destination.",
+            "topic": "MAC Address Learning and Flooding"
+          },
+          {
+            "question": "What is the primary capability that distinguishes a Layer 3 switch from a Layer 2 switch?",
+            "options": [
+              "Ability to provide Power over Ethernet (PoE).",
+              "Ability to perform routing functions between different networks using IP addresses.",
+              "Higher port density for more connections.",
+              "Better resistance to electromagnetic interference."
+            ],
+            "answer": "Ability to perform routing functions between different networks using IP addresses.",
+            "explanation": "Layer 3 switches incorporate routing capabilities, allowing them to forward packets between different networks based on IP addresses, unlike Layer 2 switches.",
+            "topic": "Layer 3 Switch Capabilities"
+          },
+          {
+            "question": "Which statement accurately describes the typical performance of a Layer 3 switch compared to a traditional router for basic packet forwarding?",
+            "options": [
+              "Layer 3 switches are generally slower than routers.",
+              "Layer 3 switches are generally faster than routers.",
+              "Their speeds are identical for basic forwarding.",
+              "Routers are always faster due to more complex packet analysis."
+            ],
+            "answer": "Layer 3 switches are generally faster than routers.",
+            "explanation": "Layer 3 switches are typically faster than traditional routers for basic packet forwarding because routers perform more in-depth packet analysis.",
+            "topic": "Layer 3 Switch Performance"
+          },
+          {
+            "question": "What protocol is used by devices on a local network to translate an IP address into a MAC address?",
+            "options": [
+              "DNS (Domain Name System)",
+              "DHCP (Dynamic Host Configuration Protocol)",
+              "ARP (Address Resolution Protocol)",
+              "ICMP (Internet Control Message Protocol)"
+            ],
+            "answer": "ARP (Address Resolution Protocol)",
+            "explanation": "ARP is specifically designed to resolve logical IP addresses into physical MAC addresses for local network communication.",
+            "topic": "ARP and MAC Address Resolution"
+          },
+          {
+            "question": "What does a Layer 3 switch enable communication between that a Layer 2 switch cannot directly achieve?",
+            "options": [
+              "Two computers on the same physical segment.",
+              "A computer and a printer on the same VLAN.",
+              "Computers on different VLANs or subnets.",
+              "A wired device and a wireless device."
+            ],
+            "answer": "Computers on different VLANs or subnets.",
+            "explanation": "Layer 3 switches can perform routing functions, allowing communication between different logical networks (VLANs or subnets), which a Layer 2 switch cannot directly do.",
+            "topic": "Inter-VLAN Routing"
+          },
+          {
+            "question": "What is the common term for logically segmented networks created within a single physical switch?",
+            "options": [
+              "Subnets",
+              "Virtual Private Networks (VPNs)",
+              "Virtual Local Area Networks (VLANs)",
+              "Demilitarised Zones (DMZs)"
+            ],
+            "answer": "Virtual Local Area Networks (VLANs)",
+            "explanation": "The notes describe how a switch can emulate multiple LANs called Virtual LANs (VLANs).",
+            "topic": "Virtual LANs (VLANs)"
+          },
+          {
+            "question": "Why would an administrator use VLANs on a switch, particularly when combined with Layer 3 functionality?",
+            "options": [
+              "To increase the overall network bandwidth for all users equally.",
+              "To physically isolate devices from each other completely.",
+              "To control and segment traffic flow between different logical groups of users or devices.",
+              "To bypass the need for any routing devices in the network."
+            ],
+            "answer": "To control and segment traffic flow between different logical groups of users or devices.",
+            "explanation": "VLANs are used to logically separate ports and traffic, allowing for control over data movement between groups, typically through a Layer 3 routing function.",
+            "topic": "Purpose of VLANs"
+          },
+          {
+            "question": "Which networking device is primarily used to connect individual networks to each other, acting as the 'second most common device on networks'?",
+            "options": [
+              "Ethernet Network Switch",
+              "Wireless Access Point",
+              "Ethernet Network Router",
+              "Firewall"
+            ],
+            "answer": "Ethernet Network Router",
+            "explanation": "The router is identified as the second most common device and its primary role is connecting disparate networks.",
+            "topic": "Router - Role and Commonality"
+          },
+          {
+            "question": "At which OSI layer do routers primarily operate when forwarding data between networks?",
+            "options": [
+              "Layer 1 (Physical Layer)",
+              "Layer 2 (Data Link Layer)",
+              "Layer 3 (Network Layer)",
+              "Layer 4 (Transport Layer)"
+            ],
+            "answer": "Layer 3 (Network Layer)",
+            "explanation": "Routers operate at Layer 3 and use IP addresses to make forwarding decisions.",
+            "topic": "Router - OSI Layer of Operation"
+          },
+          {
+            "question": "When a router receives data, what is the first thing it typically removes before examining the IP address for routing decisions?",
+            "options": [
+              "The application data.",
+              "The transport layer header.",
+              "The framing information (Layer 2) and MAC address.",
+              "The source IP address."
+            ],
+            "answer": "The framing information (Layer 2) and MAC address.",
+            "explanation": "Routers 'take the framing information off, which is the physical information, and the physical MAC address' before examining the IP address.",
+            "topic": "Router - Packet Processing"
+          },
+          {
+            "question": "What are 'routing tables' used for in a router?",
+            "options": [
+              "To store MAC addresses of connected devices.",
+              "To manage user credentials for network access.",
+              "To define the best paths for forwarding data packets between networks.",
+              "To log security events and threats."
+            ],
+            "answer": "To define the best paths for forwarding data packets between networks.",
+            "explanation": "Routing tables allow routers to 'select the best path to the next destination' for data.",
+            "topic": "Router - Routing Tables"
+          },
+          {
+            "question": "A router situated at the core of a large corporate network, responsible for high-speed data switching between major network segments, is known as what type of router?",
+            "options": [
+              "Edge Router",
+              "Distribution Router",
+              "Access Router",
+              "Core Router"
+            ],
+            "answer": "Core Router",
+            "explanation": "Core routers exist 'at the top of your network' and facilitate switching data 'from one major network to another'.",
+            "topic": "Router - Types (Core)"
+          },
+          {
+            "question": "Which type of router is positioned closer to end-user clients and often handles routing between VLANs?",
+            "options": [
+              "Core Router",
+              "Edge Router",
+              "Distribution Router",
+              "Virtual Router"
+            ],
+            "answer": "Distribution Router",
+            "explanation": "Distribution routers are described as being 'closer to the clients' and performing 'a lot of the switching between, for instance, VLANs'.",
+            "topic": "Router - Types (Distribution)"
+          },
+          {
+            "question": "What is a 'virtual router' in the context of modern computing environments?",
+            "options": [
+              "A physical router that connects to cloud services.",
+              "A software-based router created within virtual machines (VMs).",
+              "A router with a wireless capability built-in.",
+              "A router designed for home use only."
+            ],
+            "answer": "A software-based router created within virtual machines (VMs).",
+            "explanation": "Virtual routers are software created inside virtual machines to efficiently move data between them in cloud environments.",
+            "topic": "Router - Types (Virtual)"
+          },
+          {
+            "question": "When considering the purchase of a router, what does 'throughput' refer to?",
+            "options": [
+              "The maximum number of devices that can connect to it.",
+              "The speed at which it can process and forward data per second under load.",
+              "The physical size of the router device.",
+              "The number of interfaces the router has."
+            ],
+            "answer": "The speed at which it can process and forward data per second under load.",
+            "explanation": "Throughput is defined as 'How fast can they put the data through them?', especially when security features are enabled.",
+            "topic": "Router - Purchase Considerations (Throughput)"
+          },
+          {
+            "question": "What is a DMZ (Demilitarised Zone) in the context of network security and router/firewall placement?",
+            "options": [
+              "An encrypted tunnel for secure communication.",
+              "A network segment with no security measures.",
+              "A segregated network zone between two firewalls, typically for public-facing servers.",
+              "A logical network that isolates guest users."
+            ],
+            "answer": "A segregated network zone between two firewalls, typically for public-facing servers.",
+            "explanation": "A DMZ is described as a 'demilitarise zone' where a web server can be placed 'behind the Internet firewall and open port 80' with another firewall behind it to the internal network.",
+            "topic": "Firewall/Router - DMZ"
+          },
+          {
+            "question": "Why might a router be chosen over a Layer 3 switch for more complex network requirements?",
+            "options": [
+              "Routers are always cheaper than Layer 3 switches.",
+              "Routers have higher port density than Layer 3 switches.",
+              "Routers perform more in-depth packet analysis for features like QoS and security policies.",
+              "Layer 3 switches cannot connect to the Internet."
+            ],
+            "answer": "Routers perform more in-depth packet analysis for features like QoS and security policies.",
+            "explanation": "Routers 'do packet analysis, they do more than just send one packet from one network to another. They actually do a lot more examination of the packet for a lot more items.'",
+            "topic": "Router vs. Layer 3 Switch"
+          },
+          {
+            "question": "Which networking device is described as a 'special purpose communication device for wireless LANs' used to connect devices wirelessly?",
+            "options": [
+              "Ethernet Switch",
+              "Router",
+              "Wireless Access Point",
+              "Modem"
+            ],
+            "answer": "Wireless Access Point",
+            "explanation": "The notes define the Wireless Access Point as a 'special purpose communication device for wireless LANs'.",
+            "topic": "Wireless Access Point - Definition"
+          },
+          {
+            "question": "What is the primary role of a Wireless Access Point (WAP) in bridging networks?",
+            "options": [
+              "To connect two wired networks.",
+              "To connect wireless clients to a wired network.",
+              "To route traffic between different VLANs.",
+              "To provide direct internet access without any wired connection."
+            ],
+            "answer": "To connect wireless clients to a wired network.",
+            "explanation": "Access points 'act as a bridge between the wired and the wireless networks' and 'eventually connect to a wired network so they can access things like the Internet'.",
+            "topic": "Wireless Access Point - Bridging Function"
+          },
+          {
+            "question": "In a corporate network, how are Wireless Access Points typically deployed compared to home multi-function devices?",
+            "options": [
+              "As integrated devices with routing and switching built-in.",
+              "As separate, dedicated devices connected to a switch.",
+              "Directly connected to the internet without a router.",
+              "Managed individually without centralisation."
+            ],
+            "answer": "As separate, dedicated devices connected to a switch.",
+            "explanation": "In a corporate network, a WAP is 'usually a separate device and it connects to a switch'.",
+            "topic": "Wireless Access Point - Corporate vs. Home"
+          },
+          {
+            "question": "What is the common term for the name of a wireless network, which is often broadcasted so users can find it?",
+            "options": [
+              "IP Address",
+              "MAC Address",
+              "Service Set Identifier (SSID)",
+              "URL"
+            ],
+            "answer": "Service Set Identifier (SSID)",
+            "explanation": "The 'service set identifier (SSID), or the name of the network' is broadcasted normally.",
+            "topic": "Wireless - SSID"
+          },
+          {
+            "question": "Why is security more crucial for wireless networks compared to wired networks?",
+            "options": [
+              "Wireless networks are inherently faster.",
+              "Wired networks cannot be eavesdropped on.",
+              "Wireless signals float in the air and can be monitored by anyone with an adapter in range.",
+              "Wireless networks do not support encryption."
+            ],
+            "answer": "Wireless signals float in the air and can be monitored by anyone with an adapter in range.",
+            "explanation": "In a wireless network, 'those signals are floating around basically in the air, and anyone with a wireless adapter can monitor those signals. So you really need to strengthen the security'.",
+            "topic": "Wireless - Security Importance"
+          },
+          {
+            "question": "What is the term for an unauthorized wireless access point that has been connected to a company network, potentially by an unsuspecting employee?",
+            "options": [
+              "Evil twin",
+              "Rogue access point",
+              "Guest access point",
+              "Managed access point"
+            ],
+            "answer": "Rogue access point",
+            "explanation": "Rogue access points are defined as 'unauthorized access points connected to a company network'.",
+            "topic": "Wireless Security - Rogue AP"
+          },
+          {
+            "question": "Which malicious access point type broadcasts the same SSID as a legitimate one, attempting to trick users into connecting to it?",
+            "options": [
+              "Phishing hotspot",
+              "Evil twin",
+              "Wardriving AP",
+              "Spoofed AP"
+            ],
+            "answer": "Evil twin",
+            "explanation": "The evil twin is 'an access point that's broadcasting the same SSID as a legitimate access point'.",
+            "topic": "Wireless Security - Evil Twin"
+          },
+          {
+            "question": "Which storage solution connects directly to an Ethernet network via a switch and typically contains multiple disks for shared data, appearing as network shares?",
+            "options": [
+              "Storage Area Network (SAN)",
+              "Direct-Attached Storage (DAS)",
+              "Cloud Storage",
+              "Network Attached Storage (NAS)"
+            ],
+            "answer": "Network Attached Storage (NAS)",
+            "explanation": "NAS is a 'device that connects directly to the Ethernet network through a switch normally and is a simple device that contains multiple disks and it's used to store and share data'.",
+            "topic": "NAS - Definition"
+          },
+          {
+            "question": "What are the common file-sharing protocols used by a NAS device to allow clients to access stored files?",
+            "options": [
+              "HTTP and HTTPS",
+              "FTP and SFTP",
+              "NFS (Network File System) and SMB (Server Message Block)",
+              "SMTP and POP3"
+            ],
+            "answer": "NFS (Network File System) and SMB (Server Message Block)",
+            "explanation": "The notes mention 'network file system is a Linux-based file system' and 'the Windows equivalent to that is server message block'.",
+            "topic": "NAS - Protocols"
+          },
+          {
+            "question": "Compared to many cloud solutions, what is a cost advantage of Network Attached Storage (NAS)?",
+            "options": [
+              "NAS has lower upfront cost.",
+              "NAS has ongoing subscription fees.",
+              "NAS is always free to use.",
+              "NAS is more expensive but faster."
+            ],
+            "answer": "NAS has lower upfront cost.",
+            "explanation": "NAS solutions are 'less expensive than many cloud solutions because storing data in the cloud... have an ongoing cost, whereas the NAS storage device, you just buy it once'.",
+            "topic": "NAS - Cost Advantage"
+          },
+          {
+            "question": "Which storage solution is designed for 'high-performance applications and mission critical' data, typically running on a fibre optic network and appearing as directly connected disks?",
+            "options": [
+              "Network Attached Storage (NAS)",
+              "Cloud Storage",
+              "Direct-Attached Storage (DAS)",
+              "Storage Area Network (SAN)"
+            ],
+            "answer": "Storage Area Network (SAN)",
+            "explanation": "The SAN is 'much more robust than the network-attached storage and is meant for high-performance applications and mission critical' and 'run usually on a fibre network'.",
+            "topic": "SAN - Definition"
+          },
+          {
+            "question": "How does a Storage Area Network (SAN) achieve faster data transfers compared to NAS over an Ethernet network?",
+            "options": [
+              "By using standard Ethernet packets that are highly compressed.",
+              "By transferring data in large blocks directly to the client/server, bypassing file-level protocols.",
+              "By relying solely on wireless communication.",
+              "By performing more in-depth packet analysis at the application layer."
+            ],
+            "answer": "By transferring data in large blocks directly to the client/server, bypassing file-level protocols.",
+            "explanation": "The SAN 'doesn't use those protocols' (Ethernet/packets) but 'uses blocks of data and they appear similarly to a directly connected device like a hard disk. So the data transfers over these are much faster'.",
+            "topic": "SAN - Performance"
+          },
+          {
+            "question": "Which global network of caching servers serves content to local users to reduce network latency and improve application response time?",
+            "options": [
+              "Virtual Private Network (VPN)",
+              "Storage Area Network (SAN)",
+              "Content Delivery Network (CDN)",
+              "Local Area Network (LAN)"
+            ],
+            "answer": "Content Delivery Network (CDN)",
+            "explanation": "The CDN is a 'worldwide collection of caching servers that serve content to local users, which reduces network latency, and improves app response time'.",
+            "topic": "CDN - Definition"
+          },
+          {
+            "question": "When a user requests content from a CDN, what happens if the content is not already cached on a local CDN server?",
+            "options": [
+              "The request is denied.",
+              "The CDN server fetches the content from the origin server and then caches and serves it.",
+              "The user is redirected to the origin server directly.",
+              "The CDN generates new content on the fly."
+            ],
+            "answer": "The CDN server fetches the content from the origin server and then caches and serves it.",
+            "explanation": "When a user requests content from a distant location, 'the content delivery network will cache that web page on a local caching server and will supply the content to the user'.",
+            "topic": "CDN - Caching Process"
+          },
+          {
+            "question": "What type of content commonly benefits significantly from being delivered via a CDN due to its bandwidth demands?",
+            "options": [
+              "Small text files",
+              "System configuration files",
+              "Streaming videos and large media files",
+              "Encrypted database records"
+            ],
+            "answer": "Streaming videos and large media files",
+            "explanation": "CDNs are particularly useful for 'media files, streaming videos, and those sorts of things which use a lot of bandwidth'.",
+            "topic": "CDN - Content Types"
+          },
+          {
+            "question": "Which CDN configuration allows an administrator to control content access based on the requesting user's country?",
+            "options": [
+              "Content Compression",
+              "Caching Rules",
+              "Geo-filtering",
+              "Custom Domains"
+            ],
+            "answer": "Geo-filtering",
+            "explanation": "Geo-filtering allows you to 'say, you know what, if the request is coming from a country that's not allowed to see this content... you can block it'.",
+            "topic": "CDN - Geo-filtering"
+          },
+          {
+            "question": "What is the primary purpose of Quality of Service (QoS) in network management?",
+            "options": [
+              "To encrypt all data traffic for security.",
+              "To manage data traffic to reduce packet loss, latency, and jitter, prioritising critical applications.",
+              "To automatically detect and prevent network intrusions.",
+              "To balance network load across multiple servers."
+            ],
+            "answer": "To manage data traffic to reduce packet loss, latency, and jitter, prioritising critical applications.",
+            "explanation": "QoS is a 'technology that manages data traffic in order to reduce packet loss, reduce latency, and jitter on a network, and it allows organizations to prioritize network traffic'.",
+            "topic": "QoS - Primary Purpose"
+          },
+          {
+            "question": "Which applications are highly sensitive to latency and jitter, making them prime candidates for QoS prioritisation?",
+            "options": [
+              "Email and file transfers.",
+              "Database updates and web Browse.",
+              "Voice over IP (VoIP), online gaming, and video conferencing.",
+              "DNS queries and DHCP requests."
+            ],
+            "answer": "Voice over IP (VoIP), online gaming, and video conferencing.",
+            "explanation": "QoS is crucial for 'IPTV... Gaming... Voice over IP... And streaming media... and even video conferencing' which are 'very intolerant to those types of things like jitter and latency'.",
+            "topic": "QoS - Sensitive Applications"
+          },
+          {
+            "question": "How do network devices like switches and routers implement QoS to prioritise traffic?",
+            "options": [
+              "By converting all low-priority traffic to a different protocol.",
+              "By sending all high-priority traffic over a separate physical cable.",
+              "By reading special codes inserted into the data frames/packets that indicate priority.",
+              "By temporarily shutting down less important network segments."
+            ],
+            "answer": "By reading special codes inserted into the data frames/packets that indicate priority.",
+            "explanation": "The mechanism is to 'insert a code basically in the frames of these types of traffic that prioritize them in the switches and the routers'.",
+            "topic": "QoS - Implementation Mechanism"
+          },
+          {
+            "question": "What is the core function of a Virtual Private Network (VPN)?",
+            "options": [
+              "To provide public Wi-Fi access.",
+              "To create a virtualized server environment.",
+              "To establish an encrypted connection over a public network for secure data transmission.",
+              "To monitor network traffic for security breaches."
+            ],
+            "answer": "To establish an encrypted connection over a public network for secure data transmission.",
+            "explanation": "A VPN is 'basically an encrypted connection between you and someone else, or you and the server... the source machine scrambles the data and the destination machine unscrambles it'.",
+            "topic": "VPN - Core Function"
+          },
+          {
+            "question": "When working from home, how does a VPN enhance the security of handling sensitive corporate documents?",
+            "options": [
+              "It physically isolates the home computer from the internet.",
+              "It encrypts the data travelling between the home computer and the business network over the internet.",
+              "It automatically blocks all non-work related websites.",
+              "It installs additional antivirus software on the home computer."
+            ],
+            "answer": "It encrypts the data travelling between the home computer and the business network over the internet.",
+            "explanation": "An 'encrypted connection can be set up from the business... to your computer at home, which also creates this virtual private network, and it's virtual because it isn't a separate network, it's travelling through the public network'.",
+            "topic": "VPN - Remote Work Security"
+          },
+          {
+            "question": "Why is a VPN considered 'virtual'?",
+            "options": [
+              "Because it relies on virtual machines.",
+              "Because it is not a physically separate network but creates a private tunnel over a public one.",
+              "Because it only exists in the cloud.",
+              "Because it can simulate multiple network connections."
+            ],
+            "answer": "Because it is not a physically separate network but creates a private tunnel over a public one.",
+            "explanation": "It's 'virtual because it isn't a separate network, it's travelling through the public network. But... you're encrypting the data travelling through that, it's as if you have created your own virtual network, which is private'.",
+            "topic": "VPN - 'Virtual' Aspect"
+          },
+          {
+            "question": "What is the primary function of the 'Time To Live' (TTL) mechanism in an IP packet?",
+            "options": [
+              "To measure the network latency for the packet.",
+              "To ensure the packet reaches its destination within a specific time limit (e.g., in seconds).",
+              "To prevent packets from looping indefinitely on a network by limiting their hop count.",
+              "To indicate the security classification of the data within the packet."
+            ],
+            "answer": "To prevent packets from looping indefinitely on a network by limiting their hop count.",
+            "explanation": "The 'Time to Live feature is built into the IP protocol and it only allows the packet to travel a maximum of so many hops... so it's an Internet Protocol mechanism designed to help manage the lifespan of network data packets'.",
+            "topic": "TTL - Primary Function"
+          },
+          {
+            "question": "What does the TTL value in an IP packet represent in terms of its lifespan?",
+            "options": [
+              "The maximum time in milliseconds the packet can exist.",
+              "The number of bytes the packet contains.",
+              "The maximum number of times the packet can be transmitted by a device in the network (hop count).",
+              "The priority level for QoS."
+            ],
+            "answer": "The maximum number of times the packet can be transmitted by a device in the network (hop count).",
+            "explanation": "It's 'actually how many times this thing is going to be transmitted by a device in the network'.",
+            "topic": "TTL - Hop Count"
+          }
+        ]
+    }
+]

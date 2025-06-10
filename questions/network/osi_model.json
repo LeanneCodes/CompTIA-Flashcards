@@ -1,0 +1,427 @@
+[
+    {
+        "name": "OSI Reference Model",
+        "quizzes": [
+          {
+            "question": "What is the primary purpose of the OSI model?",
+            "options": [
+              "To define specific hardware and software for networking.",
+              "To ensure interoperability between equipment and software from different manufacturers.",
+              "To dictate how network systems are programmed.",
+              "To create a global database of all network devices."
+            ],
+            "answer": "To ensure interoperability between equipment and software from different manufacturers.",
+            "explanation": "The primary goal of the OSI model is to ensure interoperability, allowing equipment and software from different manufacturers to work together seamlessly. ",
+            "topic": "Purpose of OSI Model"
+          },
+          {
+            "question": "The OSI model is a conceptual framework. What does it describe?",
+            "options": [
+              "How network hardware should be physically designed.",
+              "How network communication should function.",
+              "Specific programming languages for network software.",
+              "The exact specifications for network cables."
+            ],
+            "answer": "How network communication should function.",
+            "explanation": "The OSI model is not software or hardware itself, but a model that describes how network communication should function. ",
+            "topic": "Nature of OSI Model"
+          },
+          {
+            "question": "Which organization developed the OSI model?",
+            "options": [
+              "Institute of Electrical and Electronics Engineers (IEEE)",
+              "Internet Engineering Task Force (IETF)",
+              "International Standards Organisation (ISO)",
+              "World Wide Web Consortium (W3C)"
+            ],
+            "answer": "International Standards Organisation (ISO)",
+            "explanation": "The OSI model was developed by the International Standards Organisation (ISO). ",
+            "topic": "Origin of OSI Model"
+          },
+          {
+            "question": "How many conceptual layers is the OSI model divided into?",
+            "options": [
+              "3",
+              "5",
+              "7",
+              "10"
+            ],
+            "answer": "7",
+            "explanation": "The OSI model is divided into 7 conceptual layers, each responsible for a specific part of network communication. ",
+            "topic": "Structure of OSI Model"
+          },
+          {
+            "question": "What does the OSI model define for each layer?",
+            "options": [
+              "The specific programming language to be used.",
+              "How the system is programmed.",
+              "What functions should be completed by the software or hardware and the output of each layer.",
+              "The exact hardware components required for each layer."
+            ],
+            "answer": "What functions should be completed by the software or hardware and the output of each layer.",
+            "explanation": "The OSI model defines what functions should be completed by the software or hardware and the output of each layer. It does not dictate how the system is programmed or software created; that's up to the manufacturer. ",
+            "topic": "Key Principle of OSI Model"
+          },
+          {
+            "question": "Which benefit of the OSI model helps technicians quickly isolate network communication issues?",
+            "options": [
+              "Adaptability",
+              "Understanding Networks",
+              "Interoperability",
+              "Troubleshooting"
+            ],
+            "answer": "Troubleshooting",
+            "explanation": "The OSI model helps technicians and network personnel quickly isolate the source of network communication issues by understanding which layer is responsible for which component, aiding in troubleshooting. ",
+            "topic": "Benefits of OSI Model (Troubleshooting)"
+          },
+          {
+            "question": "When sending data, at which layer does data originate in the top-down encapsulation process?",
+            "options": [
+              "Physical Layer",
+              "Application Layer",
+              "Transport Layer",
+              "Network Layer"
+            ],
+            "answer": "Application Layer",
+            "explanation": "When sending data, data originates at the Application Layer. ",
+            "topic": "Data Flow (Sending)"
+          },
+          {
+            "question": "In the receiving device's decapsulation (bottom-up) process, data arrives at which layer first?",
+            "options": [
+              "Application Layer",
+              "Network Layer",
+              "Physical Layer",
+              "Data Link Layer"
+            ],
+            "answer": "Physical Layer",
+            "explanation": "When receiving data, data arrives at the Physical Layer. ",
+            "topic": "Data Flow (Receiving)"
+          },
+          {
+            "question": "What is the key principle of Layer-to-Layer Communication (Peer-to-Peer) in the OSI model?",
+            "options": [
+              "Each layer only communicates with the layer directly above or below it.",
+              "Data is processed only at the Application Layer on both devices.",
+              "Each layer on a device communicates with the corresponding layer on the other device.",
+              "Only the Physical Layer communicates directly between devices."
+            ],
+            "answer": "Each layer on a device communicates with the corresponding layer on the other device.",
+            "explanation": "Crucially, each layer on a device communicates with the corresponding layer on the other device. ",
+            "topic": "Peer-to-Peer Communication"
+          },
+          {
+            "question": "What is the primary function of Layer 1 (the Physical Layer)?",
+            "options": [
+              "To manage node-to-node data delivery.",
+              "To define the physical characteristics and electrical/optical signals for network transmission.",
+              "To establish, manage, and terminate sessions.",
+              "To present data in a format understood by applications."
+            ],
+            "answer": "To define the physical characteristics and electrical/optical signals for network transmission.",
+            "explanation": "Layer 1, the Physical Layer, defines the physical characteristics and electrical/optical signals required for network transmission. ",
+            "topic": "Physical Layer Definition"
+          },
+          {
+            "question": "What kind of data does the Physical Layer transmit?",
+            "options": [
+              "Packets",
+              "Segments",
+              "Raw bitstreams",
+              "Frames"
+            ],
+            "answer": "Raw bitstreams",
+            "explanation": "The purpose of the Physical Layer is to transmit raw bitstreams from the sender to the receiver over a network medium. ",
+            "topic": "Physical Layer Function"
+          },
+          {
+            "question": "Which of the following is an example of 'Physical Equipment' defined at the Physical Layer?",
+            "options": [
+              "Web browsers",
+              "Operating systems",
+              "Routers",
+              "Cables (copper, fibre optic)"
+            ],
+            "answer": "Cables (copper, fibre optic)",
+            "explanation": "Key elements defined at the Physical Layer include Physical Equipment like cables (copper, fibre optic), network cards, and connectors. ",
+            "topic": "Physical Layer Elements"
+          },
+          {
+            "question": "What do '1s and 0s' represent at the Physical Layer?",
+            "options": [
+              "Network addresses",
+              "Logical connections",
+              "Presence/absence of light, two different frequencies, or voltage levels.",
+              "Data encoding schemes like JPEG."
+            ],
+            "answer": "Presence/absence of light, two different frequencies, or voltage levels.",
+            "explanation": "The Physical Layer defines how 1s and 0s are represented, such as presence/absence of light, two different frequencies/colours, or voltage levels. ",
+            "topic": "Physical Layer Signal Characteristics"
+          },
+          {
+            "question": "What is the unit of data transmitted at the Data Link Layer?",
+            "options": [
+              "Bits",
+              "Packets",
+              "Segments",
+              "Frames"
+            ],
+            "answer": "Frames",
+            "explanation": "The Data Link Layer takes data from the Network Layer and adds a header and trailer to it, forming a frame, which is the unit of data transmitted at this layer. ",
+            "topic": "Data Link Layer Framing"
+          },
+          {
+            "question": "What type of address is associated with Physical Addressing (MAC Addressing) at the Data Link Layer?",
+            "options": [
+              "IP Address",
+              "Port Number",
+              "MAC Address",
+              "Logical Address"
+            ],
+            "answer": "MAC Address",
+            "explanation": "Physical Addressing involves adding a unique identifier, the MAC address, to the frame. ",
+            "topic": "Data Link Layer Physical Addressing"
+          },
+          {
+            "question": "What is the most common mechanism at the Data Link Layer for error control?",
+            "options": [
+              "Encryption",
+              "Packet fragmentation",
+              "Retransmission of a faulty frame",
+              "Flow control"
+            ],
+            "answer": "Retransmission of a faulty frame",
+            "explanation": "The most common mechanism at the Data Link Layer for error control is retransmission of a faulty frame if a problem is detected upon receipt. ",
+            "topic": "Data Link Layer Error Control"
+          },
+          {
+            "question": "Which sub-layer of the Data Link Layer handles media access methods and determines if communication is connectionless or connection-oriented?",
+            "options": [
+              "Media Access Control (MAC) Layer",
+              "Logical Link Control (LLC) Layer",
+              "Network Interface Layer",
+              "Physical Link Layer"
+            ],
+            "answer": "Logical Link Control (LLC) Layer",
+            "explanation": "The Logical Link Control (LLC) Layer handles media access methods and determines whether the communication is connectionless or connection-oriented. ",
+            "topic": "Data Link Layer Sub-layers (LLC)"
+          },
+          {
+            "question": "What is the primary responsibility of Layer 3 (the Network Layer)?",
+            "options": [
+              "Node-to-node data delivery within the same network.",
+              "Connecting nodes across multiple networks.",
+              "Transmitting raw bitstreams.",
+              "Establishing, managing, and terminating application sessions."
+            ],
+            "answer": "Connecting nodes across multiple networks.",
+            "explanation": "The Network Layer's primary responsibility is connecting nodes across multiple networks. ",
+            "topic": "Network Layer Definition"
+          },
+          {
+            "question": "What are data chunks at the Network Layer called?",
+            "options": [
+              "Frames",
+              "Segments",
+              "Packets",
+              "Datagrams"
+            ],
+            "answer": "Packets",
+            "explanation": "Data chunks at the Network Layer are called packets. ",
+            "topic": "Network Layer Packet Addressing"
+          },
+          {
+            "question": "What is the core process by which data is moved across different, interconnected networks at Layer 3?",
+            "options": [
+              "Framing",
+              "Error checking",
+              "Routing",
+              "Flow control"
+            ],
+            "answer": "Routing",
+            "explanation": "Routing is the core process by which data is moved across different, interconnected networks at the Network Layer. ",
+            "topic": "Network Layer Routing"
+          },
+          {
+            "question": "Which layer is responsible for end-to-end communication reliability and managing data flow for applications?",
+            "options": [
+              "Physical Layer",
+              "Data Link Layer",
+              "Network Layer",
+              "Transport Layer"
+            ],
+            "answer": "Transport Layer",
+            "explanation": "Layer 4, the Transport Layer, focuses on end-to-end communication reliability and managing data flow for applications. ",
+            "topic": "Transport Layer Definition"
+          },
+          {
+            "question": "What conceptual mechanism does the Transport Layer create between two computers, abstracting underlying network complexities?",
+            "options": [
+              "A 'data tunnel'",
+              "A 'single pipeline'",
+              "A 'network bridge'",
+              "A 'session controller'"
+            ],
+            "answer": "A 'single pipeline'",
+            "explanation": "The Transport Layer creates, conceptually, a 'single pipeline' between two computers, abstracting the complexities of the underlying network from higher layers. ",
+            "topic": "Transport Layer Function"
+          },
+          {
+            "question": "What is the purpose of 'Port Numbers' at the Transport Layer?",
+            "options": [
+              "To identify physical network interfaces.",
+              "To specify the MAC address of the next device.",
+              "To direct incoming and outgoing data streams to the correct applications.",
+              "To define the speed of data transmission."
+            ],
+            "answer": "To direct incoming and outgoing data streams to the correct applications.",
+            "explanation": "Service Point Addressing (Port Numbers) directs incoming and outgoing data streams to the correct applications on the receiving or sending computer. ",
+            "topic": "Transport Layer Port Numbers"
+          },
+          {
+            "question": "Which Transport Layer protocol is connectionless and does not perform error checking, making it suitable for video streaming?",
+            "options": [
+              "TCP (Transmission Control Protocol)",
+              "FTP (File Transfer Protocol)",
+              "UDP (User Datagram Protocol)",
+              "HTTP (Hypertext Transfer Protocol)"
+            ],
+            "answer": "UDP (User Datagram Protocol)",
+            "explanation": "UDP (User Datagram Protocol) is connectionless, has no error checking, and is suitable for applications where occasional data loss is acceptable and speed is paramount, like video streaming. ",
+            "topic": "Transport Layer UDP"
+          },
+          {
+            "question": "What mechanism does TCP use to ensure data integrity and ordering, involving SYN, SYN/ACK, and ACK packets?",
+            "options": [
+              "Flow Control",
+              "Error Control",
+              "Three-Way Handshake",
+              "Session Multiplexing"
+            ],
+            "answer": "Three-Way Handshake",
+            "explanation": "TCP uses sequence numbers and acknowledgements, including the three-way handshake, to ensure data integrity and ordering. ",
+            "topic": "Transport Layer TCP"
+          },
+          {
+            "question": "What is the primary role of Layer 5 (the Session Layer)?",
+            "options": [
+              "To translate data formats for applications.",
+              "To transmit raw bitstreams over the network.",
+              "To establish, manage, and terminate 'sessions' or 'connections' between applications.",
+              "To route packets across different networks."
+            ],
+            "answer": "To establish, manage, and terminate 'sessions' or 'connections' between applications.",
+            "explanation": "Layer 5, the Session Layer, primarily establishes, manages, and terminates 'sessions' or 'connections' between applications on different computers. ",
+            "topic": "Session Layer Definition"
+          },
+          {
+            "question": "A crucial feature of the Session Layer for large data transfers is the ability to resume transfer from the last checkpoint if a transfer fails. What is this called?",
+            "options": [
+              "Error Control",
+              "Flow Control",
+              "Session Maintenance",
+              "Setting Checkpoints for Data Transfer"
+            ],
+            "answer": "Setting Checkpoints for Data Transfer",
+            "explanation": "A crucial feature for large data transfers at the Session Layer is setting checkpoints, which enables transfer to resume from the last checkpoint, saving significant time and resources. ",
+            "topic": "Session Layer Checkpoints"
+          },
+          {
+            "question": "Which data transfer mode at the Session Layer allows two-way communication but not simultaneously, requiring turns?",
+            "options": [
+              "Simplex",
+              "Half-Duplex",
+              "Full-Duplex",
+              "Multiplex"
+            ],
+            "answer": "Half-Duplex",
+            "explanation": "Half-Duplex communication allows two-way communication but not simultaneously; each machine takes turns sending data. ",
+            "topic": "Session Layer Dialogue Modes"
+          },
+          {
+            "question": "What is the primary role of Layer 6 (the Presentation Layer)?",
+            "options": [
+              "To provide an interface for user applications.",
+              "To manage physical network connections.",
+              "To present data to the application in a format it understands, and vice-versa.",
+              "To route data packets across networks."
+            ],
+            "answer": "To present data to the application in a format it understands, and vice-versa.",
+            "explanation": "The Presentation Layer's primary role is to present data to the application (Layer 7) in a format it understands, and vice-versa. ",
+            "topic": "Presentation Layer Definition"
+          },
+          {
+            "question": "The Presentation Layer acts as a 'translation layer'. What does it convert data between?",
+            "options": [
+              "Hardware and software formats.",
+              "Network-friendly format and application-friendly format.",
+              "IP addresses and MAC addresses.",
+              "English and other human languages."
+            ],
+            "answer": "Network-friendly format and application-friendly format.",
+            "explanation": "The Presentation Layer acts as a 'translation layer', converting data from a network-friendly format to an application-friendly format upon receipt, and vice-versa for transmission. ",
+            "topic": "Presentation Layer Translation"
+          },
+          {
+            "question": "Which function of the Presentation Layer scrambles original data into an unreadable format for secure transmission?",
+            "options": [
+              "Compression",
+              "Data Conversion",
+              "Character Code Translation",
+              "Encryption/Decryption"
+            ],
+            "answer": "Encryption/Decryption",
+            "explanation": "Encryption/Decryption takes original data and scrambles it into an unreadable format for secure transmission at the Presentation Layer. ",
+            "topic": "Presentation Layer Security"
+          },
+          {
+            "question": "What is the primary function of Layer 7 (the Application Layer)?",
+            "options": [
+              "To ensure reliable data transfer between end nodes.",
+              "To define physical characteristics of the network.",
+              "To define the protocols used by end-user applications to access network services.",
+              "To establish and manage sessions between applications."
+            ],
+            "answer": "To define the protocols used by end-user applications to access network services.",
+            "explanation": "Layer 7, the Application Layer, defines the protocols used by end-user applications to access network services. ",
+            "topic": "Application Layer Definition"
+          },
+          {
+            "question": "Which key principle of Layer 7 states that it's the layer the user directly interacts with?",
+            "options": [
+              "Abstraction",
+              "Seamless Interaction",
+              "User-centric",
+              "Protocol-Driven Interoperability"
+            ],
+            "answer": "User-centric",
+            "explanation": "Layer 7 is user-centric; it's the layer the user directly interacts with. ",
+            "topic": "Application Layer Principles"
+          },
+          {
+            "question": "Which common network service/protocol operating at Layer 7 translates human-readable domain names (e.g., www.example.com) into numerical IP addresses?",
+            "options": [
+              "FTP (File Transfer Protocol)",
+              "SMTP (Simple Mail Transfer Protocol)",
+              "DHCP (Dynamic Host Configuration Protocol)",
+              "DNS (Domain Name System)"
+            ],
+            "answer": "DNS (Domain Name System)",
+            "explanation": "DNS (Domain Name System) translates human-readable domain names into numerical IP addresses. ",
+            "topic": "Application Layer Protocols (DNS)"
+          },
+          {
+            "question": "Which of the following is an example of an application that relies heavily on Layer 7 functionality?",
+            "options": [
+              "Network card drivers",
+              "Physical cables",
+              "Email services",
+              "Routers"
+            ],
+            "answer": "Email services",
+            "explanation": "Email services (sending, receiving, and managing emails) are examples of applications that rely on Layer 7. ",
+            "topic": "Application Layer Examples"
+          }
+        ]
+    }
+]
