@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // --- DOM Elements ---
     const mainContentDiv = document.getElementById('main-content');
+    const mainTitle = document.getElementById('main-title'); // <--- NEW: Get the main title element
     const categorySelection = document.querySelector('.category-selection');
     const subcategorySelection = document.getElementById('subcategory-selection');
     const quizContainer = document.getElementById('quiz-container');
@@ -20,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const feedbackDiv = document.getElementById('feedback');
     const explanationDiv = document.getElementById('explanation');
     const nextButton = document.getElementById('next-question-btn');
-    // Removed: const prevButton = document.getElementById('prev-question-btn');
     const backFromQuizBtn = document.getElementById('back-from-quiz-btn');
 
     // Result Page Elements
@@ -77,13 +77,22 @@ document.addEventListener('DOMContentLoaded', () => {
         globalRevisionHistoryPage.classList.add('page-hidden'); // The 'global' revision page
 
         // Now, determine which page was requested and show it appropriately
-        if (pageElement === historyPage || pageElement === globalRevisionHistoryPage) {
-            // These pages are direct children of .container, and mainContentDiv should be hidden
+        if (pageElement === historyPage) {
+            mainTitle.style.display = 'none'; // Hide main title for history page
             pageElement.classList.remove('page-hidden');
-            pageElement.style.display = 'block'; // Ensure it's block
+            pageElement.style.display = 'block';
+        } else if (pageElement === globalRevisionHistoryPage) {
+            mainTitle.style.display = 'none'; // Hide main title for global revision page
+            pageElement.classList.remove('page-hidden');
+            pageElement.style.display = 'block';
+        } else if (pageElement === revisionPage) { // Specific revision page after quiz
+            mainTitle.style.display = 'none'; // Hide main title for this specific revision page
+            pageElement.classList.remove('page-hidden');
+            pageElement.style.display = 'block';
         } else {
-            // All other pages (category, subcategory, quiz, result, last quiz revision) are within mainContentDiv
+            // All other pages (category, subcategory, quiz, result) are within mainContentDiv
             mainContentDiv.classList.remove('page-hidden'); // Show the main content wrapper
+            mainTitle.style.display = 'block'; // Ensure main title is visible for these pages
 
             // Hide all potential children of mainContentDiv
             const allQuizRelatedPages = [
@@ -99,8 +108,18 @@ document.addEventListener('DOMContentLoaded', () => {
             // Special handling for category selection to restore flex
             if (pageElement === categorySelection) {
                 pageElement.style.display = 'flex';
-            } else {
+                mainTitle.textContent = 'Select a Category'; // Set title for initial category view
+            } else if (pageElement === subcategorySelection) {
                 pageElement.style.display = 'block';
+                mainTitle.textContent = 'Select a Subcategory'; // Set title for subcategory view
+            } else if (pageElement === quizContainer) {
+                pageElement.style.display = 'block';
+                mainTitle.textContent = `${currentSubcategory} Quiz`; // Title for active quiz
+            } else if (pageElement === quizResultPage) {
+                pageElement.style.display = 'block';
+                mainTitle.textContent = 'Quiz Complete!'; // Title for quiz result
+            } else {
+                pageElement.style.display = 'block'; // Default for other pages
             }
         }
         // Close burger menu if open when navigating to a new page
@@ -210,13 +229,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
         resetQuizState(); // Reset state when moving to subcategories list
         showPage(subcategorySelection);
+        mainTitle.textContent = 'Select a Subcategory'; // <--- Set title for subcategory view
         backFromQuizBtn.style.display = 'none'; // Hide back button from quiz when showing subcategories
 
-        subcategorySelection.innerHTML = '<h2>Select a Subcategory</h2>'; // Clear previous content
+        subcategorySelection.innerHTML = ''; // Clear previous content
 
         const category = quizData.categories.find(cat => cat.name === currentCategory);
 
         if (category) {
+            const subcategoryTitle = document.createElement('h2');
+            subcategoryTitle.textContent = `Select a ${currentCategory} Subcategory`; // More specific subcategory title
+            // subcategorySelection.appendChild(subcategoryTitle);
+
             category.subcategories.forEach(subcat => {
                 const subcategoryItem = document.createElement('div');
                 subcategoryItem.classList.add('subcategory-item');
@@ -243,12 +267,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         showPage(quizContainer);
+        mainTitle.textContent = `Practice Quiz`; // <--- Set title for active quiz
         backFromQuizBtn.style.display = 'block'; // Always show back button in quiz view
 
         const quiz = quizzesForSubcategory[currentQuizIndex];
 
         // Update Quiz Header (Title, Question Count, Progress Bar)
-        quizTitle.textContent = `${currentSubcategory} Quiz`;
+        quizTitle.textContent = `${currentSubcategory}`;
         questionCountSpan.textContent = `Question ${currentQuizIndex + 1} of ${quizzesForSubcategory.length}`;
         const progressPercentage = ((currentQuizIndex + 1) / quizzesForSubcategory.length) * 100;
         progressBar.style.width = `${progressPercentage}%`;
@@ -346,6 +371,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Quiz Result Display ---
     function displayQuizResult() {
         showPage(quizResultPage); // Show the result page
+        mainTitle.textContent = 'Quiz Complete!'; // <--- Set title for quiz result
         finalScoreSpan.textContent = correctAnswers;
         totalQuestionsSpan.textContent = quizzesForSubcategory.length;
         const percentage = quizzesForSubcategory.length > 0
@@ -404,6 +430,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function displayHistory() {
         showPage(historyPage); // Show the history page
         historyContent.innerHTML = ''; // Clear previous content
+        mainTitle.style.display = 'none'; // <--- Hide main title for history page
         const history = JSON.parse(localStorage.getItem(HISTORY_KEY)) || []; // Get history
 
         if (history.length === 0) {
@@ -453,6 +480,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function displayRevisionTopics() {
         showPage(revisionPage); // Show the revision topics page for the *last quiz*
         revisionTopicsContent.innerHTML = ''; // Clear previous content
+        mainTitle.style.display = 'none'; // <--- Hide main title for this revision page
 
         if (incorrectTopics.length === 0) {
             revisionTopicsContent.innerHTML = '<p>No revision topics identified for the last quiz. Great job!</p>';
@@ -474,6 +502,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function displayGlobalRevisionHistory() {
         showPage(globalRevisionHistoryPage);
         globalRevisionContent.innerHTML = ''; // Clear previous content
+        mainTitle.style.display = 'none'; // <--- Hide main title for global revision history
         const globalRevision = JSON.parse(localStorage.getItem(GLOBAL_REVISION_KEY)) || {};
 
         const hasTopics = Object.keys(globalRevision).length > 0 &&

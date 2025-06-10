@@ -115,10 +115,8 @@ h1, h2 {
 
 /* Category boxes - Red and pill-shaped */
 .category-box {
-    background-color: rgb(200,16,46);
-    color: white;
+    background-color: #e9ecef; /* Light grey background for category boxes */
     padding: 50px 30px;
-    border-radius: 20px;
     cursor: pointer;
     width: 45%;
     box-sizing: border-box;
@@ -126,11 +124,13 @@ h1, h2 {
 }
 
 .category-box:hover {
-    background-color: rgb(139,27,115);
+    background-color: #d8dadf; /* Darker grey on hover */
 }
 
 .category-box h2 {
-    color: white; /* White text for category titles */
+    color: black; /* Black text for category titles */
+    font-family: 'Arial', sans-serif !important;
+    font-weight: 300;
 }
 
 .subcategory-selection,
