@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const networkCategory = document.getElementById('network-category');
     const securityCategory = document.getElementById('security-category');
+    const cyberCategory = document.getElementById('cyber-category');
 
     const quizTitle = document.getElementById('quiz-title');
     const questionCountSpan = document.getElementById('question-count');
@@ -217,6 +218,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     securityCategory.addEventListener('click', () => {
         currentCategory = 'Security';
+        displaySubcategories();
+    });
+
+    cyberCategory.addEventListener('click', () => {
+        currentCategory = 'Cybersecurity';
         displaySubcategories();
     });
 
