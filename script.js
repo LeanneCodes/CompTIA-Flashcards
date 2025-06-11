@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // --- DOM Elements ---
     const mainContentDiv = document.getElementById('main-content');
-    const mainTitle = document.getElementById('main-title'); // <--- NEW: Get the main title element
+    const mainTitle = document.getElementById('main-title');
     const categorySelection = document.querySelector('.category-selection');
     const subcategorySelection = document.getElementById('subcategory-selection');
     const quizContainer = document.getElementById('quiz-container');
@@ -55,12 +55,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const burgerMenu = document.getElementById('burgerMenu');
     const navLinks = document.getElementById('navLinks');
 
+    // --- NEW: Back Buttons for Category/Subcategory selection ---
+    const backToMainFromCategoryBtn = document.getElementById('back-to-main-from-category');
+    const backToCategoriesFromSubcategoryBtn = document.getElementById('back-to-categories-from-subcategory');
+
+
     // --- Quiz Data and State Variables ---
     let quizData = null;
     let currentCategory = null;
     let currentSubcategory = null;
-    let currentQuizIndex = 0;
     let quizzesForSubcategory = [];
+    let currentQuizIndex = 0;
     let correctAnswers = 0;
     let incorrectTopics = []; // To store topics for revision for the *current* quiz
 
@@ -76,6 +81,10 @@ document.addEventListener('DOMContentLoaded', () => {
         historyPage.classList.add('page-hidden');
         revisionPage.classList.add('page-hidden'); // The 'last quiz' revision page
         globalRevisionHistoryPage.classList.add('page-hidden'); // The 'global' revision page
+
+        // --- NEW: Hide all the back buttons by default ---
+        backToMainFromCategoryBtn.style.display = 'none';
+        backToCategoriesFromSubcategoryBtn.style.display = 'none';
 
         // Now, determine which page was requested and show it appropriately
         if (pageElement === historyPage) {
@@ -110,9 +119,11 @@ document.addEventListener('DOMContentLoaded', () => {
             if (pageElement === categorySelection) {
                 pageElement.style.display = 'flex';
                 mainTitle.textContent = 'Select a Category'; // Set title for initial category view
+                // backToMainFromCategoryBtn.style.display = 'block'; // This would be for a step *before* categories
             } else if (pageElement === subcategorySelection) {
                 pageElement.style.display = 'block';
-                mainTitle.textContent = 'Select a Subcategory'; // Set title for subcategory view
+                mainTitle.textContent = `Select a subcategory for ${currentCategory}`; // Set title for subcategory view
+                backToCategoriesFromSubcategoryBtn.style.display = 'block'; // Show back button for subcategories
             } else if (pageElement === quizContainer) {
                 pageElement.style.display = 'block';
                 mainTitle.textContent = `${currentSubcategory} Quiz`; // Title for active quiz
@@ -189,6 +200,21 @@ document.addEventListener('DOMContentLoaded', () => {
     globalRevisionBackBtn.addEventListener('click', goToHomePage); // Back from global revision to home
     viewRevisionBtn.addEventListener('click', displayRevisionTopics);
 
+    // --- NEW: Event listeners for the new back buttons ---
+    backToMainFromCategoryBtn.addEventListener('click', () => {
+        // This button is typically for going back from categories to a "pre-category" screen.
+        // In your current flow, 'Select a Category' is the initial view.
+        // If you were to add a landing page before categories, this would go there.
+        // For now, it will effectively do the same as "Home".
+        goToHomePage();
+    });
+
+    backToCategoriesFromSubcategoryBtn.addEventListener('click', () => {
+        resetQuizState(); // Clear any quiz progress
+        showPage(categorySelection); // Go back to category selection
+    });
+
+
     // --- Clear History Event Listeners ---
     clearHistoryBtn.addEventListener('click', () => clearAllHistory('standard'));
     clearGlobalRevisionBtn.addEventListener('click', () => clearAllHistory('global'));
@@ -234,8 +260,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         resetQuizState(); // Reset state when moving to subcategories list
-        showPage(subcategorySelection);
-        mainTitle.textContent = 'Select a Subcategory'; // <--- Set title for subcategory view
+        showPage(subcategorySelection); // This will now correctly show the subcategories and the back button
+        mainTitle.textContent = `Select a subcategory for ${currentCategory}`; // Set title for subcategory view
         backFromQuizBtn.style.display = 'none'; // Hide back button from quiz when showing subcategories
 
         subcategorySelection.innerHTML = ''; // Clear previous content
@@ -245,7 +271,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (category) {
             const subcategoryTitle = document.createElement('h2');
             subcategoryTitle.textContent = `Select a ${currentCategory} Subcategory`; // More specific subcategory title
-            // subcategorySelection.appendChild(subcategoryTitle);
+            // subcategorySelection.appendChild(subcategoryTitle); // Keep this commented out if you want mainTitle to handle it
 
             category.subcategories.forEach(subcat => {
                 const subcategoryItem = document.createElement('div');
@@ -273,7 +299,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         showPage(quizContainer);
-        mainTitle.textContent = `Practice Quiz`; // <--- Set title for active quiz
+        mainTitle.textContent = `Practice Quiz`; // Set title for active quiz
         backFromQuizBtn.style.display = 'block'; // Always show back button in quiz view
 
         const quiz = quizzesForSubcategory[currentQuizIndex];
@@ -370,14 +396,14 @@ document.addEventListener('DOMContentLoaded', () => {
     backFromQuizBtn.addEventListener('click', () => {
         if (confirm("Are you sure you want to go back? Your current quiz progress will be lost.")) {
             resetQuizState();
-            displaySubcategories();
+            displaySubcategories(); // Go back to the subcategory selection
         }
     });
 
     // --- Quiz Result Display ---
     function displayQuizResult() {
         showPage(quizResultPage); // Show the result page
-        mainTitle.textContent = 'Quiz Complete!'; // <--- Set title for quiz result
+        mainTitle.textContent = 'Quiz Complete!'; // Set title for quiz result
         finalScoreSpan.textContent = correctAnswers;
         totalQuestionsSpan.textContent = quizzesForSubcategory.length;
         const percentage = quizzesForSubcategory.length > 0
@@ -436,7 +462,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function displayHistory() {
         showPage(historyPage); // Show the history page
         historyContent.innerHTML = ''; // Clear previous content
-        mainTitle.style.display = 'none'; // <--- Hide main title for history page
+        mainTitle.style.display = 'none'; // Hide main title for history page
         const history = JSON.parse(localStorage.getItem(HISTORY_KEY)) || []; // Get history
 
         if (history.length === 0) {
@@ -486,7 +512,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function displayRevisionTopics() {
         showPage(revisionPage); // Show the revision topics page for the *last quiz*
         revisionTopicsContent.innerHTML = ''; // Clear previous content
-        mainTitle.style.display = 'none'; // <--- Hide main title for this revision page
+        mainTitle.style.display = 'none'; // Hide main title for this revision page
 
         if (incorrectTopics.length === 0) {
             revisionTopicsContent.innerHTML = '<p>No revision topics identified for the last quiz. Great job!</p>';
@@ -508,7 +534,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function displayGlobalRevisionHistory() {
         showPage(globalRevisionHistoryPage);
         globalRevisionContent.innerHTML = ''; // Clear previous content
-        mainTitle.style.display = 'none'; // <--- Hide main title for global revision history
+        mainTitle.style.display = 'none'; // Hide main title for global revision history
         const globalRevision = JSON.parse(localStorage.getItem(GLOBAL_REVISION_KEY)) || {};
 
         const hasTopics = Object.keys(globalRevision).length > 0 &&
