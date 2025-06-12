@@ -279,7 +279,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 subcategoryItem.textContent = subcat.name;
                 subcategoryItem.addEventListener('click', () => {
                     currentSubcategory = subcat.name;
-                    quizzesForSubcategory = subcat.quizzes;
+                    let allQuizzes = [...subcat.quizzes]; // Create a shallow copy to shuffle
+
+                    // --- SHUFFLE AND LIMIT QUESTIONS ---
+                    // Fisher-Yates (Knuth) shuffle algorithm
+                    for (let i = allQuizzes.length - 1; i > 0; i--) {
+                        const j = Math.floor(Math.random() * (i + 1));
+                        [allQuizzes[i], allQuizzes[j]] = [allQuizzes[j], allQuizzes[i]]; // Swap
+                    }
+
+                    // Limit to a maximum of 10 questions
+                    quizzesForSubcategory = allQuizzes.slice(0, 10);
+                    // --- END SHUFFLE AND LIMIT QUESTIONS ---
+
+
                     currentQuizIndex = 0; // Reset quiz index for new subcategory
                     correctAnswers = 0; // Reset score for new quiz
                     incorrectTopics = []; // Reset revision topics
