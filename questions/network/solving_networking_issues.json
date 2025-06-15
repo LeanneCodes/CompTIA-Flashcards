@@ -1,0 +1,499 @@
+[
+    {
+        "name": "Solving Networking Issues",
+        "quizzes": [
+          {
+            "question": "What is the primary function of a 'protocol analyzer'?",
+            "options": [
+              "To block network traffic.",
+              "To capture packets or frames from a network connection for analysis.",
+              "To encrypt network data.",
+              "To configure network devices remotely."
+            ],
+            "answer": "To capture packets or frames from a network connection for analysis.",
+            "explanation": "Protocol analyzers are either dedicated devices or computers with software on them that capture packets or frames from a network connection.",
+            "topic": "Protocol Analyzer Tools"
+          },
+          {
+            "question": "Name two common protocol analyzer software tools mentioned.",
+            "options": [
+              "Google Chrome and Mozilla Firefox.",
+              "Wireshark and Microsoft Network Monitor.",
+              "Adobe Photoshop and Microsoft Word.",
+              "VLC Media Player and iTunes."
+            ],
+            "answer": "Wireshark and Microsoft Network Monitor.",
+            "explanation": "The video displays examples of Wireshark Network Analyzer and Microsoft Network Monitor 3.4.",
+            "topic": "Protocol Analyzer Tools"
+          },
+          {
+            "question": "Can protocol analyzers capture data from both wired and wireless connections?",
+            "options": [
+              "Only wired connections.",
+              "Only wireless connections.",
+              "Yes, they can capture from both wired and wireless connections.",
+              "No, they only analyze logs."
+            ],
+            "answer": "Yes, they can capture from both wired and wireless connections.",
+            "explanation": "They can capture packets or frames from a wired connection or a wireless connection.",
+            "topic": "Protocol Analyzer Tools"
+          },
+          {
+            "question": "What configuration change is needed on a switch to capture traffic from multiple sources using a protocol analyzer connected to a single port?",
+            "options": [
+              "Enable QoS.",
+              "Configure a span port (or mirror port) to copy traffic to the analyzer's port.",
+              "Disable all other ports.",
+              "Change the IP address of the switch."
+            ],
+            "answer": "Configure a span port (or mirror port) to copy traffic to the analyzer's port.",
+            "explanation": "If you were plugged into a switch and we were trying to capture data from multiple sources in the network, then the configuration would have to be changed on the switch so that traffic not intended for the protocol analyzer's port is sent to it, often called a span port or mirror port.",
+            "topic": "Protocol Analyzer Tools"
+          },
+          {
+            "question": "What is the term for a switch port configured to copy all traffic from other ports to a designated monitoring port?",
+            "options": [
+              "Trunk port.",
+              "Access port.",
+              "Span port (or mirror port).",
+              "Uplink port."
+            ],
+            "answer": "Span port (or mirror port).",
+            "explanation": "This feature is often called a span port, or sometimes a mirror port, whereby the data is duplicated and sent to that port.",
+            "topic": "Protocol Analyzer Tools"
+          },
+          {
+            "question": "What is 'promiscuous mode' in the context of network interfaces?",
+            "options": [
+              "A mode where the interface only receives packets addressed to it.",
+              "A mode where the interface passes all received packets up the protocol stack, regardless of the destination MAC address.",
+              "A mode that encrypts all traffic.",
+              "A mode that blocks all incoming traffic."
+            ],
+            "answer": "A mode where the interface passes all received packets up the protocol stack, regardless of the destination MAC address.",
+            "explanation": "With a network card, you can also set the network card to what's known as promiscuous mode. And what that means is it will receive all packets that hit the network card regardless of the destination address.",
+            "topic": "Protocol Analyzer Tools"
+          },
+          {
+            "question": "Why is 'promiscuous mode' typically not effective for capturing all network traffic on a switch without a span port?",
+            "options": [
+              "Because switches only send traffic to the intended destination, not all ports.",
+              "Because it slows down the network.",
+              "Because it requires a special cable.",
+              "Because it's a security risk."
+            ],
+            "answer": "Because switches only send traffic to the intended destination, not all ports.",
+            "explanation": "In a switched environment, it's typically only the traffic destined for your computer that's going to be sent to your computer. So, setting your network card in promiscuous mode is generally only going to capture traffic for your computer.",
+            "topic": "Protocol Analyzer Tools"
+          },
+          {
+            "question": "What is the primary benefit of using 'Power over Ethernet (PoE)' for devices like IP phones or wireless access points?",
+            "options": [
+              "It eliminates the need for network cables.",
+              "It provides both data connectivity and electrical power over a single Ethernet cable, simplifying installation.",
+              "It increases data transfer speeds.",
+              "It reduces network security."
+            ],
+            "answer": "It provides both data connectivity and electrical power over a single Ethernet cable, simplifying installation.",
+            "explanation": "IP Phones can also support a PC... and it can use this one cable to support the Phone, power the Phone, and also use the data from the PC. Wireless access points... are usually powered through the switch as well.",
+            "topic": "Power over Ethernet (PoE)"
+          },
+          {
+            "question": "What kind of switch is typically used to provide PoE to devices?",
+            "options": [
+              "A simple unmanaged switch.",
+              "A PoE-capable switch (e.g., a multilayer switch with power capabilities).",
+              "A wireless router.",
+              "A hub."
+            ],
+            "answer": "A PoE-capable switch (e.g., a multilayer switch with power capabilities).",
+            "explanation": "The example shows a '3560-24PS Multilayer Switch' which is described as providing power to IP Phones and wireless access points.",
+            "topic": "Power over Ethernet (PoE)"
+          },
+          {
+            "question": "What command can be used on a Cisco switch (as implied by the example) to check the power usage of PoE ports?",
+            "options": [
+              "show ip interface brief",
+              "show mac address-table",
+              "show power inline",
+              "show version"
+            ],
+            "answer": "show power inline",
+            "explanation": "The output 'show power inline' is used to display the total power, used power, and remaining power on the switch for PoE devices.",
+            "topic": "Power over Ethernet (PoE)"
+          },
+          {
+            "question": "If a PoE switch shows 'remaining power' significantly less than 'total power', what does this indicate?",
+            "options": [
+              "The switch is running efficiently.",
+              "The switch is nearing its power capacity for connected PoE devices.",
+              "The switch is not providing any power.",
+              "The switch needs a software update."
+            ],
+            "answer": "The switch is nearing its power capacity for connected PoE devices.",
+            "explanation": "By using this, you can quickly see whether you're getting to capacity as far as the ability of that switch to provide power to these wireless devices.",
+            "topic": "Power over Ethernet (PoE)"
+          },
+          {
+            "question": "What does a protocol analyzer primarily help a network administrator with?",
+            "options": [
+              "Preventing all network attacks.",
+              "Troubleshooting network problems by examining the actual data flowing through the network.",
+              "Designing network topologies.",
+              "Installing physical cables."
+            ],
+            "answer": "Troubleshooting network problems by examining the actual data flowing through the network.",
+            "explanation": "Protocol analyzers help in troubleshooting by allowing examination of packets or frames to understand network behavior and identify issues.",
+            "topic": "Protocol Analyzer Tools"
+          },
+          {
+            "question": "Why would a protocol analyzer be used to capture traffic on a wireless access point directly?",
+            "options": [
+              "To encrypt wireless signals.",
+              "To avoid the need for a span port on a switch in a wired segment, capturing all wireless traffic that passes through the AP.",
+              "To provide power to the access point.",
+              "To block unauthorized wireless users."
+            ],
+            "answer": "To avoid the need for a span port on a switch in a wired segment, capturing all wireless traffic that passes through the AP.",
+            "explanation": "In this case, we're using a direct connection to a wireless access point for capturing some data. This allows capturing wireless traffic at the source.",
+            "topic": "Protocol Analyzer Tools"
+          },
+          {
+            "question": "What information can be derived from 'capturing packets' with a protocol analyzer?",
+            "options": [
+              "The brand of the computer.",
+              "Source and destination IP addresses, ports, protocols, and the actual data payload.",
+              "The operating system of the analyzer.",
+              "The physical location of the server."
+            ],
+            "answer": "Source and destination IP addresses, ports, protocols, and the actual data payload.",
+            "explanation": "Protocol analyzers capture packets, which contain header information (source/destination addresses, ports, protocols) and the data itself, essential for deep analysis.",
+            "topic": "Protocol Analyzer Tools"
+          },
+          {
+            "question": "What kind of issues can a protocol analyzer help diagnose that a simple ping or ipconfig cannot?",
+            "options": [
+              "Whether an IP address is assigned.",
+              "Detailed protocol-level errors, application miscommunications, or unusual traffic patterns.",
+              "Physical cable breaks.",
+              "Power outages."
+            ],
+            "answer": "Detailed protocol-level errors, application miscommunications, or unusual traffic patterns.",
+            "explanation": "While basic tools confirm connectivity, protocol analyzers delve into the specifics of data flow, revealing issues like malformed packets, unexpected protocol behavior, or application-layer errors.",
+            "topic": "Protocol Analyzer Tools"
+          },
+          {
+            "question": "What does 'total amount power' refer to in the context of a PoE switch's capabilities?",
+            "options": [
+              "The power consumed by the switch itself.",
+              "The maximum power that the switch can deliver across all its PoE ports.",
+              "The power of the connected devices.",
+              "The power supplied by the network cable."
+            ],
+            "answer": "The maximum power that the switch can deliver across all its PoE ports.",
+            "explanation": "The output of 'show power inline' includes 'Total Amount Power' which represents the maximum PoE budget of the switch.",
+            "topic": "Power over Ethernet (PoE)"
+          },
+          {
+            "question": "If a PoE device is not powering on, and the 'show power inline' command indicates sufficient remaining power, what might be the next troubleshooting step related to PoE?",
+            "options": [
+              "Reboot the entire network.",
+              "Check the PoE cable connection and verify the device itself is PoE compliant and functional.",
+              "Change the switch IP address.",
+              "Run an IP conflict scan."
+            ],
+            "answer": "Check the PoE cable connection and verify the device itself is PoE compliant and functional.",
+            "explanation": "If the switch has power but the device isn't powering up, the issue shifts to the cable (e.g., faulty cable, improper termination) or the device's PoE capability/functionality.",
+            "topic": "Power over Ethernet (PoE)"
+          },
+          {
+            "question": "Why is it important for a protocol analyzer to be able to decode different protocols?",
+            "options": [
+              "To make the captured data unreadable.",
+              "To interpret the raw captured data into a human-readable format for various network protocols (e.g., TCP, UDP, HTTP).",
+              "To encrypt the traffic.",
+              "To only show IP addresses."
+            ],
+            "answer": "To interpret the raw captured data into a human-readable format for various network protocols (e.g., TCP, UDP, HTTP).",
+            "explanation": "The effectiveness of a protocol analyzer comes from its ability to parse and display information according to the rules of different protocols, making troubleshooting possible.",
+            "topic": "Protocol Analyzer Tools"
+          },
+          {
+            "question": "What is the primary reason for using a 'dedicated device' as a protocol analyzer instead of software on a general-purpose computer?",
+            "options": [
+              "Dedicated devices are cheaper.",
+              "Dedicated devices often offer more robust hardware, specialized capture capabilities, and higher performance for heavy traffic loads.",
+              "Dedicated devices are easier to use for beginners.",
+              "Dedicated devices do not require power."
+            ],
+            "answer": "Dedicated devices often offer more robust hardware, specialized capture capabilities, and higher performance for heavy traffic loads.",
+            "explanation": "Protocol analyzers are either dedicated devices or computers with software on them, implying dedicated devices have specific advantages for the task.",
+            "topic": "Protocol Analyzer Tools"
+          },
+          {
+            "question": "In a scenario where a wired PC is connected to a PoE IP Phone, and the phone then connects to a PoE-capable switch, how does the PC get network connectivity?",
+            "options": [
+              "It uses a separate cable to the switch.",
+              "The IP Phone acts as a small switch, passing data and power from the single cable connected to the main switch to both the phone and the PC.",
+              "The PC uses a wireless connection.",
+              "The PC is not connected to the network in this setup."
+            ],
+            "answer": "The IP Phone acts as a small switch, passing data and power from the single cable connected to the main switch to both the phone and the PC.",
+            "explanation": "These IP Phones can also support a PC, as you see below, and it can use this one cable to support the Phone, power the Phone, and also use the data from the PC. So, that's a convenient way to go as well.",
+            "topic": "Power over Ethernet (PoE)"
+          },
+          {
+            "question": "What does it mean if a protocol analyzer captures 'frames' rather than just 'packets'?",
+            "options": [
+              "It means it's only looking at Layer 3 data.",
+              "It implies the analyzer can capture data at Layer 2 (Data Link Layer), including MAC addresses and physical layer information.",
+              "It means the analyzer is only capturing wireless traffic.",
+              "It is an outdated term."
+            ],
+            "answer": "It implies the analyzer can capture data at Layer 2 (Data Link Layer), including MAC addresses and physical layer information.",
+            "explanation": "Protocol analyzers capture packets or frames, indicating their ability to operate at both Layer 3 (network layer, packets) and Layer 2 (data link layer, frames).",
+            "topic": "Protocol Analyzer Tools"
+          },
+          {
+            "question": "What are the typical power values (in Watts) for PoE capabilities, as implied by the example of '370 watts' total power?",
+            "options": [
+              "Very low, usually less than 10 watts.",
+              "Can vary, but commercial PoE switches often provide significant power, such as hundreds of watts total.",
+              "Only 1-2 watts.",
+              "Exactly 50 watts."
+            ],
+            "answer": "Can vary, but commercial PoE switches often provide significant power, such as hundreds of watts total.",
+            "explanation": "The example shows a switch with a 'total amount power of 370 watts,' indicating that PoE switches can supply substantial power.",
+            "topic": "Power over Ethernet (PoE)"
+          },
+          {
+            "question": "Why might a network administrator 'fast forward time' when testing PoE devices in a simulation environment (like Packet Tracer)?",
+            "options": [
+              "To speed up data transfer rates.",
+              "To simulate the time it takes for a device to boot up and negotiate PoE power and network connectivity.",
+              "To skip security checks.",
+              "To reconfigure the switch automatically."
+            ],
+            "answer": "To simulate the time it takes for a device to boot up and negotiate PoE power and network connectivity.",
+            "explanation": "We'll just press on the Fast Forward Time here so that the phone connects up...",
+            "topic": "Power over Ethernet (PoE)"
+          },
+          {
+            "question": "What type of devices, besides IP phones, are commonly powered by PoE?",
+            "options": [
+              "Desktop computers.",
+              "Wireless access points and security cameras.",
+              "Printers.",
+              "Servers."
+            ],
+            "answer": "Wireless access points and security cameras.",
+            "explanation": "And again, not only Phones but wireless access points, little things you find in the ceiling sometimes at a business, they are usually powered through the switch as well. Security cameras are also very common PoE devices, though not explicitly mentioned here.",
+            "topic": "Power over Ethernet (PoE)"
+          },
+          {
+            "question": "What is the consequence of a PoE switch being 'at capacity' in terms of power?",
+            "options": [
+              "It will automatically upgrade its power supply.",
+              "New PoE devices will not power on, or existing ones might become unstable if power delivery is insufficient.",
+              "It will start using less power.",
+              "It will increase network speed."
+            ],
+            "answer": "New PoE devices will not power on, or existing ones might become unstable if power delivery is insufficient.",
+            "explanation": "By using this, you can quickly see whether you're getting to capacity as far as the ability of that switch to provide power to these wireless devices, implying negative consequences if capacity is exceeded.",
+            "topic": "Power over Ethernet (PoE)"
+          },
+          {
+            "question": "What is the primary benefit of being able to 'capture traffic from multiple sources' on a network?",
+            "options": [
+              "To increase network latency.",
+              "To gain a holistic view of network communication for more comprehensive troubleshooting and analysis.",
+              "To reduce network bandwidth.",
+              "To make the network less secure."
+            ],
+            "answer": "To gain a holistic view of network communication for more comprehensive troubleshooting and analysis.",
+            "explanation": "If you were plugged into a switch and we were trying to capture data from multiple sources in the network, then the configuration would have to be changed... This is essential for troubleshooting issues involving multiple devices.",
+            "topic": "Protocol Analyzer Tools"
+          },
+          {
+            "question": "If you are troubleshooting a network issue and notice unexpected traffic from an unknown source, which tool would be best to identify the source and nature of that traffic?",
+            "options": [
+              "A cable tester.",
+              "A protocol analyzer.",
+              "A multimeter.",
+              "A loopback adapter."
+            ],
+            "answer": "A protocol analyzer.",
+            "explanation": "A protocol analyzer is designed to capture and analyze network traffic, making it ideal for identifying unknown sources and understanding the nature of unexpected communications.",
+            "topic": "Protocol Analyzer Tools"
+          },
+          {
+            "question": "What does a 'multilayer switch' imply in the context of PoE?",
+            "options": [
+              "It can only operate on one network layer.",
+              "It suggests advanced capabilities beyond basic Layer 2 switching, potentially including routing functions and enhanced power management for PoE.",
+              "It is a very old type of switch.",
+              "It cannot support PoE."
+            ],
+            "answer": "It suggests advanced capabilities beyond basic Layer 2 switching, potentially including routing functions and enhanced power management for PoE.",
+            "explanation": "The '3560-24PS Multilayer Switch' is mentioned, indicating a switch with more advanced features, often including robust PoE capabilities.",
+            "topic": "Power over Ethernet (PoE)"
+          },
+          {
+            "question": "What happens to network packets that are 'not intended for the protocol analyzer's port' when a span port is NOT configured?",
+            "options": [
+              "They are automatically forwarded to the analyzer.",
+              "They are ignored by the analyzer's network card unless it is in promiscuous mode, and even then, a switch would only forward unicast traffic to its intended destination.",
+              "They are encrypted.",
+              "They are deleted by the switch."
+            ],
+            "answer": "They are ignored by the analyzer's network card unless it is in promiscuous mode, and even then, a switch would only forward unicast traffic to its intended destination.",
+            "explanation": "In a switched environment, it's typically only the traffic destined for your computer that's going to be sent to your computer. So, setting your network card in promiscuous mode is generally only going to capture traffic for your computer.",
+            "topic": "Protocol Analyzer Tools"
+          },
+          {
+            "question": "What is the relationship between a 'protocol analyzer' and network troubleshooting?",
+            "options": [
+              "Protocol analyzers create network problems.",
+              "They are essential tools for in-depth network troubleshooting by providing visibility into actual data flow and protocol interactions.",
+              "They are only used for network design.",
+              "They are irrelevant to troubleshooting."
+            ],
+            "answer": "They are essential tools for in-depth network troubleshooting by providing visibility into actual data flow and protocol interactions.",
+            "explanation": "The whole context of the video is 'Using Protocol Analyzer Tools' to solve networking issues, highlighting their importance in troubleshooting.",
+            "topic": "Protocol Analyzer Tools"
+          },
+          {
+            "question": "When troubleshooting a PoE device, if the 'used power' shown by the switch is lower than expected for the device type, what might be a reason?",
+            "options": [
+              "The device is off or faulty, or the cable is not properly delivering power.",
+              "The switch is broken.",
+              "The device is over-powered.",
+              "The switch needs more devices connected."
+            ],
+            "answer": "The device is off or faulty, or the cable is not properly delivering power.",
+            "explanation": "If 'used power' is low for an expectedly active device, it implies the device isn't drawing power correctly, pointing to issues with the device itself or the power delivery over the cable.",
+            "topic": "Power over Ethernet (PoE)"
+          },
+          {
+            "question": "What could be an advantage of an 'IP Phone' that also supports a PC connection, regarding cabling?",
+            "options": [
+              "It requires two separate data cables.",
+              "It consolidates data and power for both devices over a single Ethernet drop from the switch, reducing cable clutter.",
+              "It makes the phone's power supply redundant.",
+              "It provides wireless connectivity to the PC."
+            ],
+            "answer": "It consolidates data and power for both devices over a single Ethernet drop from the switch, reducing cable clutter.",
+            "explanation": "it can use this one cable to support the Phone, power the Phone, and also use the data from the PC. So, that's a convenient way to go as well.",
+            "topic": "Power over Ethernet (PoE)"
+          },
+          {
+            "question": "If a network issue is suspected to be at the 'application layer' (e.g., a specific software not communicating correctly), what unique insight can a protocol analyzer provide?",
+            "options": [
+              "The physical location of the application server.",
+              "The content of the application data within the packets, revealing misconfigurations or errors in application-level communication.",
+              "The power consumption of the application.",
+              "The CPU usage of the client machine."
+            ],
+            "answer": "The content of the application data within the packets, revealing misconfigurations or errors in application-level communication.",
+            "explanation": "Protocol analyzers capture the entire packet, including the data payload, which can be dissected to reveal issues specific to application-layer protocols and their interactions.",
+            "topic": "Protocol Analyzer Tools"
+          },
+          {
+            "question": "How can 'logging and monitoring' of PoE switch power consumption help prevent future issues?",
+            "options": [
+              "It will prevent all power outages.",
+              "It helps in capacity planning and identifying potential power shortages before they impact service.",
+              "It encrypts power delivery.",
+              "It automatically reconfigures power settings."
+            ],
+            "answer": "It helps in capacity planning and identifying potential power shortages before they impact service.",
+            "explanation": "Monitoring power usage allows administrators to track trends and plan for future PoE device deployments without exceeding the switch's capacity.",
+            "topic": "Power over Ethernet (PoE)"
+          },
+          {
+            "question": "What is a 'Power over Ethernet (PoE) injector' used for?",
+            "options": [
+              "To remove power from an Ethernet cable.",
+              "To add power to a standard Ethernet cable for non-PoE switches.",
+              "To combine two Ethernet cables.",
+              "To convert DC power to AC power."
+            ],
+            "answer": "To add power to a standard Ethernet cable for non-PoE switches.",
+            "explanation": "Although not explicitly mentioned in the document, PoE injectors are standard components in PoE setups when the switch itself is not PoE-capable, adding power to the Ethernet cable before it reaches the end device.",
+            "topic": "Power over Ethernet (PoE)"
+          },
+          {
+            "question": "What is the main challenge in using a protocol analyzer on a 'switched' network without a span port?",
+            "options": [
+              "The analyzer will capture too much data.",
+              "The analyzer will only capture broadcast and multicast traffic, and unicast traffic destined for its own MAC address, missing most network communication.",
+              "The analyzer will cause network congestion.",
+              "The analyzer will require special software."
+            ],
+            "answer": "The analyzer will only capture broadcast and multicast traffic, and unicast traffic destined for its own MAC address, missing most network communication.",
+            "explanation": "In a switched environment, it's typically only the traffic destined for your computer that's going to be sent to your computer... This means most unicast traffic between other devices will be missed.",
+            "topic": "Protocol Analyzer Tools"
+          },
+          {
+            "question": "What kind of 'messages' might you see on a Cisco switch's console indicating a PoE device connecting?",
+            "options": [
+              "Error messages.",
+              "Link status changes (e.g., 'line came up') and power negotiation messages.",
+              "Security alerts.",
+              "Bandwidth warnings."
+            ],
+            "answer": "Link status changes (e.g., 'line came up') and power negotiation messages.",
+            "explanation": "You can see there by the messages that the line came up and we press the space bar to get rid of the rest of that.",
+            "topic": "Power over Ethernet (PoE)"
+          },
+          {
+            "question": "If 'promiscuous mode' is enabled on a network card connected to a *hub* (instead of a switch), would it capture all traffic?",
+            "options": [
+              "No, never.",
+              "Yes, because a hub sends all traffic to all ports.",
+              "Only if the hub is managed.",
+              "Only if the hub supports PoE."
+            ],
+            "answer": "Yes, because a hub sends all traffic to all ports.",
+            "explanation": "While the document focuses on switches, it's a fundamental networking concept that hubs operate by sending all traffic to all connected ports, making promiscuous mode effective for full capture on a hub.",
+            "topic": "Protocol Analyzer Tools"
+          },
+          {
+            "question": "What is the primary objective of displaying 'used' and 'remaining' power on a PoE switch?",
+            "options": [
+              "To increase the complexity of management.",
+              "To provide real-time information for power management and capacity planning.",
+              "To confuse network administrators.",
+              "To reduce network speed."
+            ],
+            "answer": "To provide real-time information for power management and capacity planning.",
+            "explanation": "You can quickly see whether you're getting to capacity as far as the ability of that switch to provide power to these wireless devices.",
+            "topic": "Power over Ethernet (PoE)"
+          },
+          {
+            "question": "What is the main purpose of a 'protocol analyzer' in a cybersecurity context?",
+            "options": [
+              "To block malicious websites.",
+              "To detect anomalies, suspicious traffic, or potential attacks by examining network packet contents and patterns.",
+              "To encrypt all network data automatically.",
+              "To install firewalls."
+            ],
+            "answer": "To detect anomalies, suspicious traffic, or potential attacks by examining network packet contents and patterns.",
+            "explanation": "While primarily a troubleshooting tool, protocol analyzers are invaluable for security professionals to analyze suspicious traffic, identify malware communication, or detect unauthorized activity by inspecting packets.",
+            "topic": "Protocol Analyzer Tools"
+          },
+          {
+            "question": "If a PoE switch is 'under-utilizing' its power capacity (low 'used power' relative to 'total power'), what might this suggest?",
+            "options": [
+              "The switch is faulty.",
+              "There is room to add more PoE devices to the network.",
+              "The network is experiencing congestion.",
+              "The switch needs to be replaced."
+            ],
+            "answer": "There is room to add more PoE devices to the network.",
+            "explanation": "If the switch has plenty of remaining power, it indicates that more PoE devices can be connected to it without exceeding its power budget.",
+            "topic": "Power over Ethernet (PoE)"
+          }
+        ]
+      }
+]

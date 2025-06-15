@@ -1,0 +1,607 @@
+[
+    {
+        "name": "Network Technologies, Architecture and Types",
+        "quizzes": [
+          {
+            "question": "Which two frequencies do wireless radio waves primarily operate at, according to the 802.11 standards?",
+            "options": [
+              "1.4 GHz and 3 GHz",
+              "2.4 GHz and 5 GHz",
+              "3.6 GHz and 6 GHz",
+              "900 MHz and 1800 MHz"
+            ],
+            "answer": "2.4 GHz and 5 GHz",
+            "explanation": "Wireless radio waves operate at two frequencies: the 2.4 GHz band and the 5 GHz band. ",
+            "topic": "802.11 Standards"
+          },
+          {
+            "question": "What is the general trade-off when comparing higher and lower frequencies in wireless transmission?",
+            "options": [
+              "Higher frequency means more speed and greater range.",
+              "Higher frequency means less speed but greater range.",
+              "Higher frequency means more speed but lesser distance capabilities.",
+              "Higher frequency has no impact on speed or range."
+            ],
+            "answer": "Higher frequency means more speed but lesser distance capabilities.",
+            "explanation": "The higher the frequency, generally, the faster the data transmission. However, as the frequency range goes up (e.g., from 2.4 GHz to 5 GHz), the higher frequency range doesn't have the distance capabilities because it's more readily blocked by things like walls. ",
+            "topic": "802.11 Standards"
+          },
+          {
+            "question": "What was the data transmission speed of the original 802.11 standard?",
+            "options": [
+              "54 Mbps",
+              "11 Mbps",
+              "1 to 2 Mbps",
+              "433 Mbps"
+            ],
+            "answer": "1 to 2 Mbps",
+            "explanation": "The original 802.11 standard would send data from 1 to 2 Mbps at 2.4 GHz range. ",
+            "topic": "802.11 Standards"
+          },
+          {
+            "question": "What was the data transmission speed of 802.11a and in which frequency range did it operate?",
+            "options": [
+              "11 Mbps at 2.4 GHz",
+              "54 Mbps at 5 GHz",
+              "54 Mbps at 2.4 GHz",
+              "1.3 Gbps at 5 GHz"
+            ],
+            "answer": "54 Mbps at 5 GHz",
+            "explanation": "802.11a ran at 54 Mbps and ran in the 5 GHz range. ",
+            "topic": "802.11 Standards"
+          },
+          {
+            "question": "What was the data transmission speed of 802.11b and in which frequency range did it operate?",
+            "options": [
+              "54 Mbps at 5 GHz",
+              "11 Mbps at 2.4 GHz",
+              "1 to 2 Mbps at 2.4 GHz",
+              "9.6 Gbps at 5 GHz"
+            ],
+            "answer": "11 Mbps at 2.4 GHz",
+            "explanation": "In 802.11b, the speed was 11 Mbps per second in the 2.4 GHz range. ",
+            "topic": "802.11 Standards"
+          },
+          {
+            "question": "What is a potential issue if older 802.11 devices are present in a network with newer 802.11b devices?",
+            "options": [
+              "It will increase the overall network performance.",
+              "It will have no effect on network performance.",
+              "It may slow down the overall network performance.",
+              "It will only affect the older devices."
+            ],
+            "answer": "It may slow down the overall network performance.",
+            "explanation": "If the router or wireless device detects the old 802.11 signal, it will revert to the old signaling method, which will slow down the network. Older devices in the same network may slow down overall network performance. ",
+            "topic": "802.11 Standards"
+          },
+          {
+            "question": "What was the data transmission speed of 802.11g and in which frequency range did it operate?",
+            "options": [
+              "11 Mbps at 5 GHz",
+              "54 Mbps at 5 GHz",
+              "54 Mbps at 2.4 GHz",
+              "1.3 Gbps at 2.4 GHz"
+            ],
+            "answer": "54 Mbps at 2.4 GHz",
+            "explanation": "802.11g operated at 54 Mbps at 2.4 GHz. ",
+            "topic": "802.11 Standards"
+          },
+          {
+            "question": "Which 802.11 standard can achieve speeds from 433 Mbps to 1.3 Gbps?",
+            "options": [
+              "802.11b",
+              "802.11g",
+              "802.11a",
+              "802.11ac"
+            ],
+            "answer": "802.11ac",
+            "explanation": "802.11ac offers speeds anywhere from 433 Mbps to 1.3 Gbps. ",
+            "topic": "802.11 Standards"
+          },
+          {
+            "question": "What is one technique 802.11ac can use to increase throughput for a single bandwidth-intensive application?",
+            "options": [
+              "Switching to a lower frequency band.",
+              "Using only a single channel for all data.",
+              "Combining several channels together.",
+              "Reducing the number of antennas."
+            ],
+            "answer": "Combining several channels together.",
+            "explanation": "For bandwidth-intensive applications, 802.11ac can combine several channels together for that data-hungry process. ",
+            "topic": "802.11 Standards"
+          },
+          {
+            "question": "What is the theoretical maximum speed of Wi-Fi 6?",
+            "options": [
+              "1.3 Gbps",
+              "54 Mbps",
+              "9.6 Gbps",
+              "100 Mbps"
+            ],
+            "answer": "9.6 Gbps",
+            "explanation": "Wi-Fi 6 has theoretical speeds up to 9.6 Gbps. ",
+            "topic": "802.11 Standards"
+          },
+          {
+            "question": "In what frequency bands can Wi-Fi 6 operate?",
+            "options": [
+              "Only 2.4 GHz",
+              "Only 5 GHz",
+              "2.4 GHz and 5 GHz simultaneously",
+              "Only 6 GHz"
+            ],
+            "answer": "2.4 GHz and 5 GHz simultaneously",
+            "explanation": "Wi-Fi 6 works in the 2.4 and 5 GHz range, and it can operate in both of them at the same time. ",
+            "topic": "802.11 Standards"
+          },
+          {
+            "question": "What is the primary difference in frequency for Wi-Fi 6E compared to Wi-Fi 6?",
+            "options": [
+              "Wi-Fi 6E operates only in 2.4 GHz.",
+              "Wi-Fi 6E operates only in 5 GHz.",
+              "Wi-Fi 6E introduces the 6 GHz range.",
+              "Wi-Fi 6E removes the 2.4 GHz range."
+            ],
+            "answer": "Wi-Fi 6E introduces the 6 GHz range.",
+            "explanation": "Wi-Fi 6E operates in a 6 GHz range. ",
+            "topic": "802.11 Standards"
+          },
+          {
+            "question": "What was the first generation of cell phone technology, which could transmit data, based on?",
+            "options": [
+              "CDMA",
+              "LTE",
+              "GSM",
+              "OFDMA"
+            ],
+            "answer": "GSM",
+            "explanation": "The first generation of what we would know today as a cell phone, which can transmit data, was based on the Global System for Mobile Communications or GSM. ",
+            "topic": "Cellular and Satellite Technologies"
+          },
+          {
+            "question": "What percentage of global mobile communications does GSM currently represent?",
+            "options": [
+              "Less than 50%",
+              "Approximately 75%",
+              "More than 90%",
+              "About 60%"
+            ],
+            "answer": "More than 90%",
+            "explanation": "Even currently today, GSM represents more than 90% of the global mobile communications. ",
+            "topic": "Cellular and Satellite Technologies"
+          },
+          {
+            "question": "Which technique allows multiple users to share the same data stream in GSM by dividing cellular channels into time slots?",
+            "options": [
+              "Code Division Multiple Access (CDMA)",
+              "Orthogonal Frequency-Division Multiple Access (OFDMA)",
+              "Time Division Multiple Access (TDMA)",
+              "Frequency Division Multiplexing (FDM)"
+            ],
+            "answer": "Time Division Multiple Access (TDMA)",
+            "explanation": "We use some techniques like time division multiple access to allow multiple users to share the same data stream. Cellular channels are divided into three time slots. ",
+            "topic": "Cellular and Satellite Technologies"
+          },
+          {
+            "question": "Which multiple access method used in 2G and 3G wireless communications creates a random or pseudo-random code for each phone connection to mix with data?",
+            "options": [
+              "TDMA",
+              "OFDMA",
+              "CDMA",
+              "GSM"
+            ],
+            "answer": "CDMA",
+            "explanation": "Code Division Multiple Access (CDMA) is another method where when the phone makes the initial connection, it comes up with a random or pseudo random code that it sends the cell phone tower. That code is then mixed with the data. It's used in 2G and 3G wireless communications. ",
+            "topic": "Cellular and Satellite Technologies"
+          },
+          {
+            "question": "What was the name given by some manufacturers to the 4G standard as it was being developed?",
+            "options": [
+              "GSM",
+              "CDMA",
+              "LTE",
+              "Wi-Fi 6"
+            ],
+            "answer": "LTE",
+            "explanation": "Long Term Evolution (LTE) was a name given by some manufacturers to the 4G standard as it was being developed. ",
+            "topic": "Cellular and Satellite Technologies"
+          },
+          {
+            "question": "What is a key benefit of 5G technology, particularly important for remote operations?",
+            "options": [
+              "Higher latency",
+              "Lower bandwidth",
+              "Almost immediate response time (lack of lag time)",
+              "Limited to 2.4 GHz band"
+            ],
+            "answer": "Almost immediate response time (lack of lag time)",
+            "explanation": "5G in particular is going to be great for remote operations because of that lack in lag time, meaning the latency is almost immediate. ",
+            "topic": "Cellular and Satellite Technologies"
+          },
+          {
+            "question": "Which IEEE standard governs cabling, connectors, and some protocols at the physical and data link layer for wired Ethernet?",
+            "options": [
+              "802.11",
+              "802.3",
+              "802.1X",
+              "802.1Q"
+            ],
+            "answer": "802.3",
+            "explanation": "The IEEE 802.3 standard governs cabling and connectors, and some protocols at the physical and data link layer, which is primarily Ethernet. ",
+            "topic": "Wired Transmission Media"
+          },
+          {
+            "question": "The data link layer in Ethernet is split into two levels. What are they called?",
+            "options": [
+              "Physical Link Control and Network Access Control",
+              "Logical Link Control and Media Access Control",
+              "Transport Layer and Session Layer",
+              "Application Layer and Presentation Layer"
+            ],
+            "answer": "Logical Link Control and Media Access Control",
+            "explanation": "The data link layer is split into two levels: logical link control and media access control (MAC). ",
+            "topic": "Wired Transmission Media"
+          },
+          {
+            "question": "What is the core size of single-mode fiber?",
+            "options": [
+              "50 to 62.5 micrometers",
+              "8.3 micrometers",
+              "125 micrometers",
+              "6.25 micrometers"
+            ],
+            "answer": "8.3 micrometers",
+            "explanation": "Single mode fiber uses an 8.3 micrometer core. ",
+            "topic": "Wired Transmission Media"
+          },
+          {
+            "question": "Which type of fiber optic cable is typically used for patch cables and connectors in a data center over shorter distances?",
+            "options": [
+              "Single-mode fiber",
+              "Multi-mode fiber",
+              "Plenum fiber",
+              "Twinax fiber"
+            ],
+            "answer": "Multi-mode fiber",
+            "explanation": "Multimode fiber is used for usually patch cables and connectors in a data center, for high speed but over shorter distances. ",
+            "topic": "Wired Transmission Media"
+          },
+          {
+            "question": "What is Twinax cable primarily made of?",
+            "options": [
+              "Fiber optic glass",
+              "Plastic",
+              "Copper",
+              "Aluminum"
+            ],
+            "answer": "Copper",
+            "explanation": "Twinax is a metal cable, made out of copper. ",
+            "topic": "Wired Transmission Media"
+          },
+          {
+            "question": "What is the typical maximum length for Twinax cables?",
+            "options": [
+              "100 meters",
+              "500 meters",
+              "10 kilometers",
+              "Within 10 meters or so"
+            ],
+            "answer": "Within 10 meters or so",
+            "explanation": "Twinax cables are usually over short distances, within 10 meters or so. ",
+            "topic": "Wired Transmission Media"
+          },
+          {
+            "question": "What is the typical maximum length for a standard Ethernet cable (Cat5, Cat5e, or Cat6) from the switch to the workstation?",
+            "options": [
+              "10 meters",
+              "50 meters",
+              "100 meters",
+              "200 meters"
+            ],
+            "answer": "100 meters",
+            "explanation": "The length on an Ethernet cable overall is up to 100 meters from the switch to the workstation. ",
+            "topic": "Wired Transmission Media"
+          },
+          {
+            "question": "What are the common sizes of coaxial cables mentioned in the text?",
+            "options": [
+              "Cat5 and Cat6",
+              "RG6 and RG11",
+              "ST and SC",
+              "LC and MT-RJ"
+            ],
+            "answer": "RG6 and RG11",
+            "explanation": "Normally, your common sizes of coaxial cables are RG6 and RG11. ",
+            "topic": "Wired Transmission Media"
+          },
+          {
+            "question": "What is a plenum grade cable designed to be?",
+            "options": [
+              "Waterproof",
+              "Fire-resistant",
+              "Flexible",
+              "Shielded from EMI"
+            ],
+            "answer": "Fire-resistant",
+            "explanation": "A plenum grade cable is meant to be fire-resistant because plastic on the outside of these cables sometimes can give off toxic fumes. ",
+            "topic": "Wired Transmission Media"
+          },
+          {
+            "question": "Where should plenum grade cables be used?",
+            "options": [
+              "Only in exposed office environments.",
+              "In situations where scenarios don't require fire resistance.",
+              "In a plenum area, a space above the office where cables run.",
+              "Only for outdoor installations."
+            ],
+            "answer": "In a plenum area, a space above the office where cables run.",
+            "explanation": "You need to use plenum grade cables in the plenum, which is a space above usually the office where cables and piping and everything else runs. ",
+            "topic": "Wired Transmission Media"
+          },
+          {
+            "question": "What type of data transfer does Fibre Channel technology primarily use?",
+            "options": [
+              "Packet-based transfers",
+              "Streaming transfers",
+              "Block data transfers",
+              "Unicast transfers"
+            ],
+            "answer": "Block data transfers",
+            "explanation": "Fibre Channel uses block data transfers and is normally used between data storage devices. ",
+            "topic": "Network Transceivers"
+          },
+          {
+            "question": "What are the two common form factors for Fibre Channel transceivers?",
+            "options": [
+              "RJ45 and RJ11",
+              "SC and ST",
+              "Small Form-factor Pluggable (SFP) and Quad Small Form-factor Pluggable (QSFP)",
+              "USB and HDMI"
+            ],
+            "answer": "Small Form-factor Pluggable (SFP) and Quad Small Form-factor Pluggable (QSFP)",
+            "explanation": "Common form factors for Fibre Channel are the small form-factor pluggable (SFP) and the quad small form-factor pluggable (QSFP). ",
+            "topic": "Network Transceivers"
+          },
+          {
+            "question": "What is the maximum data transfer rate for a Quad Small Form-factor Pluggable (QSFP) Fibre Channel transceiver?",
+            "options": [
+              "10 gigabits per second",
+              "100 gigabits per second",
+              "1 gigabit per second",
+              "40 gigabits per second"
+            ],
+            "answer": "100 gigabits per second",
+            "explanation": "The quad small form-factor pluggable can get up to 100 gigabits per second. ",
+            "topic": "Network Transceivers"
+          },
+          {
+            "question": "What is a key advantage of Fibre Channel for disaster recovery?",
+            "options": [
+              "Its short transmission distances.",
+              "Its compatibility with Ethernet attack tools.",
+              "Its ability to move large blocks of data off-site over long distances.",
+              "Its low raw data speed compared to Ethernet."
+            ],
+            "answer": "Its ability to move large blocks of data off-site over long distances.",
+            "explanation": "A key advantage of Fibre Channel is remote disaster recovery, as it can transmit data up to 5 or 10 kilometers, allowing large blocks of data to be moved off-site. ",
+            "topic": "Network Transceivers"
+          },
+          {
+            "question": "Which protocol do Ethernet transceivers use?",
+            "options": [
+              "Fibre Channel Protocol",
+              "IEEE 802.3 protocol",
+              "TCP/IP",
+              "UDP"
+            ],
+            "answer": "IEEE 802.3 protocol",
+            "explanation": "Ethernet transceivers use the IEEE 802.3 protocol. ",
+            "topic": "Network Transceivers"
+          },
+          {
+            "question": "How does Fibre Channel's reliability compare to Ethernet's?",
+            "options": [
+              "Fibre Channel is less reliable.",
+              "Fibre Channel is more reliable due to block data transfer.",
+              "They have similar reliability.",
+              "Ethernet is more reliable due to packet-based transfer."
+            ],
+            "answer": "Fibre Channel is more reliable due to block data transfer.",
+            "explanation": "When we talk about reliability, Fibre Channel, because it uses blocked data transfer, is a more reliable transfer mode than the Ethernet transceiver. ",
+            "topic": "Network Transceivers"
+          },
+          {
+            "question": "Why does using Fibre Channel in the backend of a data network offer a security advantage over using Ethernet?",
+            "options": [
+              "Fibre Channel uses the same protocols as Ethernet, making it easier to secure.",
+              "Fibre Channel is inherently unsecure.",
+              "Fibre Channel is a different protocol, so Ethernet attack tools cannot be used against it.",
+              "Fibre Channel has built-in encryption that Ethernet lacks."
+            ],
+            "answer": "Fibre Channel is a different protocol, so Ethernet attack tools cannot be used against it.",
+            "explanation": "If we're using Fibre Channel in the backend, then if anyone's using attack tools against Ethernet, they can't use them against Fibre Channel because it's just a simply a different protocol. ",
+            "topic": "Network Transceivers"
+          },
+          {
+            "question": "What is the common use case for Fibre Channel transceivers?",
+            "options": [
+              "Connecting workstations to switches in a LAN.",
+              "Concentrating network connections into a larger single connection.",
+              "Moving large blocks of data from a storage device to a switch or server in data centers.",
+              "Connecting home Internet services."
+            ],
+            "answer": "Moving large blocks of data from a storage device to a switch or server in data centers.",
+            "explanation": "Mostly Fibre Channel is found in the data centers where you're moving large blocks of data from a storage device to a switch or you're moving it into a server. ",
+            "topic": "Network Transceivers"
+          },
+          {
+            "question": "What is the center core part of a fiber optic connector called?",
+            "options": [
+              "Connector body",
+              "Coupling mechanism",
+              "Ferrule",
+              "Cladding"
+            ],
+            "answer": "Ferrule",
+            "explanation": "We have a center core part that contains in this case the fiber optic core, and that's called a ferrule. ",
+            "topic": "Network Connector Types"
+          },
+          {
+            "question": "Which fiber optic connector type has a square connector body and is friction-fit?",
+            "options": [
+              "Straight Tip (ST)",
+              "Subscriber Connector (SC)",
+              "Local Connector (LC)",
+              "Mechanical Transfer Registered Jack (MT-RJ)"
+            ],
+            "answer": "Local Connector (LC)",
+            "explanation": "The Local Connector, or LC connector, has a square connector body and pushes into its receiver on the other side, friction fit. ",
+            "topic": "Network Connector Types"
+          },
+          {
+            "question": "Which fiber optic connector type is similar to the LC but has a round metal connector (bayonet-type) that locks into place with a twist?",
+            "options": [
+              "Subscriber Connector (SC)",
+              "Local Connector (LC)",
+              "Straight Tip (ST)",
+              "Mechanical Transfer Registered Jack (MT-RJ)"
+            ],
+            "answer": "Straight Tip (ST)",
+            "explanation": "The Straight Tip (ST) is similar to the LC but has a round metal connector on the outside called a bayonet-type connector. You push this in, give it a twist, and it locks into place. ",
+            "topic": "Network Connector Types"
+          },
+          {
+            "question": "Which fiber optic connector type is a square connector commonly used in fiber optic connections at homes (demarcation points)?",
+            "options": [
+              "Local Connector (LC)",
+              "Straight Tip (ST)",
+              "Subscriber Connector (SC)",
+              "Mechanical Transfer Registered Jack (MT-RJ)"
+            ],
+            "answer": "Subscriber Connector (SC)",
+            "explanation": "The Subscriber Connector (SC) is a square connector and is used in fiber optic connections, usually at your home. ",
+            "topic": "Network Connector Types"
+          },
+          {
+            "question": "What is a characteristic of the Mechanical Transfer Registered Jack (MT-RJ) connector?",
+            "options": [
+              "It is a larger form-factor connector.",
+              "It contains only one fiber optic connection.",
+              "It contains two fiber optic connections and is smaller, allowing for higher density.",
+              "It is primarily used for coaxial cables."
+            ],
+            "answer": "It contains two fiber optic connections and is smaller, allowing for higher density.",
+            "explanation": "The Mechanical Transfer Registered Jack, or MT-RJ, is a smaller form-factor and contains two fiber optic connections, allowing for higher-density situations. ",
+            "topic": "Network Connector Types"
+          },
+          {
+            "question": "What do UPC and APC refer to in fiber optic connectors?",
+            "options": [
+              "The length of the cable.",
+              "The color of the connector body.",
+              "The shape of the fiber at the end of the cable.",
+              "The material of the ferrule."
+            ],
+            "answer": "The shape of the fiber at the end of the cable.",
+            "explanation": "UPC vs. APC connectors refers to the shape of the fiber at the end of the cable. ",
+            "topic": "Network Connector Types"
+          },
+          {
+            "question": "What is the primary characteristic of the Ultra Physical Contact (UPC) fiber connector?",
+            "options": [
+              "It has an angled end face.",
+              "It is rounded in shape.",
+              "It uses a metal ferrule.",
+              "It is a screw-on type connector."
+            ],
+            "answer": "It is rounded in shape.",
+            "explanation": "In the Ultra Physical Contact or UPC, it's rounded in shape. ",
+            "topic": "Network Connector Types"
+          },
+          {
+            "question": "Which 802.11 standard operated at 54 Mbps in the 5 GHz range?",
+            "options": [
+              "802.11b",
+              "802.11g",
+              "802.11ac",
+              "802.11a"
+            ],
+            "answer": "802.11a",
+            "explanation": "802.11a ran at 54 Mbps and ran in the 5 GHz range. ",
+            "topic": "802.11 Standards"
+          },
+          {
+            "question": "When did television broadcasting shift from radio waves to cable or satellite, opening up frequency bands for other uses?",
+            "options": [
+              "Within the last year.",
+              "Over the last number of years.",
+              "It has not shifted yet.",
+              "In the early 1990s."
+            ],
+            "answer": "Over the last number of years.",
+            "explanation": "For instance, television used to be broadcast across the radio waves and no longer is, we always go with cable or satellite now. Those frequency bands open up. ",
+            "topic": "802.11 Standards"
+          },
+          {
+            "question": "What type of system was the first generation of cell phones (1G) running on, which limited data transfer?",
+            "options": [
+              "Digital",
+              "Analog",
+              "Packet-switched",
+              "Fiber optic"
+            ],
+            "answer": "Analog",
+            "explanation": "In the beginning of telephony, when it was wireless, we had basic phones that could make phone calls and it was running on an analog system and it didn't transfer data very well or not at all, in the very beginning. ",
+            "topic": "Cellular and Satellite Technologies"
+          },
+          {
+            "question": "What happens to voice communications when transmitted over GSM?",
+            "options": [
+              "They remain analog.",
+              "They are converted into an optical signal.",
+              "They are converted into a digital signal and compressed.",
+              "They are broadcast without compression."
+            ],
+            "answer": "They are converted into a digital signal and compressed.",
+            "explanation": "When you connect, you can send out the data, or you can send voice communications, but it's all converted into a digital signal. Even a phone call, even voice is converted into data first and then compressed to take up less bandwidth. ",
+            "topic": "Cellular and Satellite Technologies"
+          },
+          {
+            "question": "What is Orthogonal Frequency-Division Multiple Access (OFDMA) in 4G LTE primarily used for?",
+            "options": [
+              "Changing the frequency range for data transmission.",
+              "Encoding data into the signal to get more throughput.",
+              "Providing backward compatibility with 2G/3G networks.",
+              "Reducing the number of available channels."
+            ],
+            "answer": "Encoding data into the signal to get more throughput.",
+            "explanation": "4G LTE uses something called Orthogonal Frequency-Division Multiple Access, which is a similar method that the wireless communications and Wi-Fi were using to get more throughput through a wireless access point. It's a method of a coding; it's not a different frequency, but it's the way they encode the data into the signal. ",
+            "topic": "Cellular and Satellite Technologies"
+          },
+          {
+            "question": "In wired Ethernet standards, what is typically the speed limit for data transmission, prompting the use of other technologies in data centers for higher speeds?",
+            "options": [
+              "100 Mbps",
+              "1 Gbps",
+              "10 Gbps",
+              "100 Gbps"
+            ],
+            "answer": "10 Gbps",
+            "explanation": "If we need very, very high speed connections, we probably won't go Ethernet because we're limited up to about 10 gigabits a second; in a data center, you're going to use something else. ",
+            "topic": "Wired Transmission Media"
+          },
+          {
+            "question": "What does 'DAC' stand for in the context of data center cabling?",
+            "options": [
+              "Digital Analog Converter",
+              "Direct Attach Copper",
+              "Data Access Cable",
+              "Distributed Area Connection"
+            ],
+            "answer": "Direct Attach Copper",
+            "explanation": "Direct attach copper (DAC) is another type of twisted coaxial twinaxial copper cable in the data center. ",
+            "topic": "Wired Transmission Media"
+          }
+        ]
+      }
+]

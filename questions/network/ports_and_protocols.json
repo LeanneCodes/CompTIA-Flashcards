@@ -1,0 +1,1039 @@
+[
+    {
+        "name": "Ports and Protocols",
+        "quizzes": [
+          {
+            "question": "What does FTP stand for?",
+            "options": [
+              "File Transmission Protocol",
+              "File Transfer Program",
+              "File Transfer Protocol",
+              "Fast Transmission Process"
+            ],
+            "answer": "File Transfer Protocol",
+            "explanation": "FTP is an acronym for File Transfer Protocol, a standard network protocol used for the transfer of computer files between a client and server on a computer network.",
+            "topic": "FTP Basics"
+          },
+          {
+            "question": "What is the primary purpose of FTP?",
+            "options": [
+              "Sending emails",
+              "Browse web pages",
+              "Transferring files from one place to another",
+              "Secure remote access"
+            ],
+            "answer": "Transferring files from one place to another",
+            "explanation": "As its name indicates, FTP is used to transfer files from one place to another.",
+            "topic": "FTP Basics"
+          },
+          {
+            "question": "How long has FTP been around?",
+            "options": [
+              "A few years",
+              "A decade",
+              "A very long time",
+              "Since the internet began"
+            ],
+            "answer": "A very long time",
+            "explanation": "FTP has been around for a very long time.",
+            "topic": "FTP History"
+          },
+          {
+            "question": "Which of the following describes FTP's performance?",
+            "options": [
+              "Slow and unreliable",
+              "Fast and robust",
+              "Moderate and unstable",
+              "Dependent on configuration"
+            ],
+            "answer": "Fast and robust",
+            "explanation": "FTP is fast and robust in terms of performance.",
+            "topic": "FTP Characteristics"
+          },
+          {
+            "question": "Is FTP complex or simple in its configuration?",
+            "options": [
+              "Very complex",
+              "Moderately complex",
+              "Simple",
+              "Extremely difficult"
+            ],
+            "answer": "Simple",
+            "explanation": "FTP is simple in its configuration.",
+            "topic": "FTP Characteristics"
+          },
+          {
+            "question": "Which type of network connections does FTP work over?",
+            "options": [
+              "UDP/IP only",
+              "Standard TCP/IP connections",
+              "Proprietary connections",
+              "Wireless only"
+            ],
+            "answer": "Standard TCP/IP connections",
+            "explanation": "FTP works over standard TCP/IP connections.",
+            "topic": "FTP Network Protocols"
+          },
+          {
+            "question": "FTP is implemented as what kind of protocol?",
+            "options": [
+              "Peer-to-peer",
+              "Connectionless",
+              "Client-server",
+              "Broadcast"
+            ],
+            "answer": "Client-server",
+            "explanation": "FTP is implemented as a standard client-server protocol.",
+            "topic": "FTP Client-Server Model"
+          },
+          {
+            "question": "What must be established before data is transmitted in FTP?",
+            "options": [
+              "A UDP connection",
+              "A secure tunnel",
+              "A TCP connection",
+              "An authentication handshake"
+            ],
+            "answer": "A TCP connection",
+            "explanation": "A TCP connection is established before data is transmitted in FTP.",
+            "topic": "FTP Connection Establishment"
+          },
+          {
+            "question": "Connection-based communications are compared to what in the notes?",
+            "options": [
+              "Public speeches",
+              "Sending postcards",
+              "Phone calls",
+              "Radio broadcasts"
+            ],
+            "answer": "Phone calls",
+            "explanation": "Connection-based communications are like phone calls: a specific number must be dialed and answered before communication can occur.",
+            "topic": "Connection Types"
+          },
+          {
+            "question": "In connection-based communications, what is required before two parties can talk?",
+            "options": [
+              "A public announcement",
+              "Dialing a specific number and the other party answering",
+              "Sending an email",
+              "Broadcasting a message"
+            ],
+            "answer": "Dialing a specific number and the other party answering",
+            "explanation": "With connection-based communications, you have to dial a specific number and the other party has to answer the phone before you can talk to each other.",
+            "topic": "Connection Types"
+          },
+          {
+            "question": "How many separate connections does FTP utilize?",
+            "options": [
+              "One",
+              "Two",
+              "Three",
+              "Four"
+            ],
+            "answer": "Two",
+            "explanation": "FTP utilizes two separate connections.",
+            "topic": "FTP Channels"
+          },
+          {
+            "question": "What are the two connections used by FTP called?",
+            "options": [
+              "Primary and Secondary",
+              "Input and Output",
+              "Control and Data",
+              "Client and Server"
+            ],
+            "answer": "Control and Data",
+            "explanation": "FTP uses a control channel and a data channel.",
+            "topic": "FTP Channels"
+          },
+          {
+            "question": "What is the purpose of the control channel in FTP?",
+            "options": [
+              "Transferring file contents",
+              "Sending commands and responses",
+              "Establishing the connection type",
+              "Encrypting data"
+            ],
+            "answer": "Sending commands and responses",
+            "explanation": "The control channel is used for sending commands and responses.",
+            "topic": "FTP Control Channel"
+          },
+          {
+            "question": "What is the purpose of the data channel in FTP?",
+            "options": [
+              "Maintaining session integrity",
+              "Transferring the actual file contents",
+              "Authenticating users",
+              "Negotiating port numbers"
+            ],
+            "answer": "Transferring the actual file contents",
+            "explanation": "The data channel is used for transferring the actual file contents.",
+            "topic": "FTP Data Channel"
+          },
+          {
+            "question": "Which port number is commonly associated with the FTP control channel?",
+            "options": [
+              "Port 20",
+              "Port 21",
+              "Port 22",
+              "Port 23"
+            ],
+            "answer": "Port 21",
+            "explanation": "The control channel typically operates over TCP Port 21.",
+            "topic": "FTP Ports"
+          },
+          {
+            "question": "Which port number is commonly associated with the FTP data channel in active mode?",
+            "options": [
+              "Port 21",
+              "Port 22",
+              "Port 20",
+              "Port 23"
+            ],
+            "answer": "Port 20",
+            "explanation": "The data channel in active mode typically operates over TCP Port 20.",
+            "topic": "FTP Ports"
+          },
+          {
+            "question": "In FTP, is the data channel always on a fixed port?",
+            "options": [
+              "Yes, always Port 20",
+              "No, it can be dynamic",
+              "Only in passive mode",
+              "Only in active mode"
+            ],
+            "answer": "No, it can be dynamic",
+            "explanation": "While Port 20 is common for the data channel in active mode, in passive mode, the data channel uses an arbitrary, high-numbered port.",
+            "topic": "FTP Modes"
+          },
+          {
+            "question": "What is a characteristic of standard FTP regarding security?",
+            "options": [
+              "It encrypts all data by default.",
+              "It uses strong authentication mechanisms.",
+              "It is highly secure.",
+              "It transmits data in clear text, which is insecure."
+            ],
+            "answer": "It transmits data in clear text, which is insecure.",
+            "explanation": "Because FTP transmits data in clear text, it is inherently insecure and vulnerable to eavesdropping.",
+            "topic": "FTP Security"
+          },
+          {
+            "question": "What is the security implication of FTP transmitting data in clear text?",
+            "options": [
+              "It improves performance.",
+              "It allows for easier debugging.",
+              "It makes data vulnerable to eavesdropping.",
+              "It is compliant with all security standards."
+            ],
+            "answer": "It makes data vulnerable to eavesdropping.",
+            "explanation": "Because FTP transmits data in clear text, it is inherently insecure and vulnerable to eavesdropping.",
+            "topic": "FTP Security Vulnerabilities"
+          },
+          {
+            "question": "What kind of information can be intercepted if FTP is used without encryption?",
+            "options": [
+              "Only file names",
+              "Usernames and passwords, as well as file contents",
+              "Only IP addresses",
+              "Only connection timestamps"
+            ],
+            "answer": "Usernames and passwords, as well as file contents",
+            "explanation": "Usernames and passwords, as well as the actual file contents, can be intercepted if FTP is used without encryption.",
+            "topic": "FTP Security Risks"
+          },
+          {
+            "question": "What does SFTP stand for?",
+            "options": [
+              "Secure File Transmission Protocol",
+              "Simple File Transfer Protocol",
+              "Secure File Transfer Protocol",
+              "System File Transfer Process"
+            ],
+            "answer": "Secure File Transfer Protocol",
+            "explanation": "SFTP stands for Secure File Transfer Protocol.",
+            "topic": "SFTP Basics"
+          },
+          {
+            "question": "What is the key difference between SFTP and FTP regarding security?",
+            "options": [
+              "SFTP is faster than FTP.",
+              "SFTP uses more connections.",
+              "SFTP encrypts data, while FTP does not.",
+              "SFTP is simpler to configure."
+            ],
+            "answer": "SFTP encrypts data, while FTP does not.",
+            "explanation": "The fundamental difference is that SFTP encrypts data, while FTP transmits it in clear text.",
+            "topic": "SFTP Security"
+          },
+          {
+            "question": "SFTP operates as a subsystem of which other protocol?",
+            "options": [
+              "HTTP",
+              "SSH",
+              "Telnet",
+              "RDP"
+            ],
+            "answer": "SSH",
+            "explanation": "SFTP operates as a subsystem of the Secure Shell (SSH) protocol.",
+            "topic": "SFTP Protocol Integration"
+          },
+          {
+            "question": "What is SSH primarily used for?",
+            "options": [
+              "Web Browse",
+              "Remote command execution and secure communication",
+              "Sending emails",
+              "Streaming video"
+            ],
+            "answer": "Remote command execution and secure communication",
+            "explanation": "SSH is primarily used for remote command execution and secure communication.",
+            "topic": "SSH Basics"
+          },
+          {
+            "question": "What does SFTP leverage from SSH to provide security?",
+            "options": [
+              "Its file compression",
+              "Its port forwarding",
+              "Its encryption and authentication mechanisms",
+              "Its user interface"
+            ],
+            "answer": "Its encryption and authentication mechanisms",
+            "explanation": "SFTP leverages SSH's robust encryption and authentication mechanisms.",
+            "topic": "SFTP Security Features"
+          },
+          {
+            "question": "Which port number is commonly associated with SFTP?",
+            "options": [
+              "Port 20",
+              "Port 21",
+              "Port 22",
+              "Port 23"
+            ],
+            "answer": "Port 22",
+            "explanation": "SFTP typically operates over TCP Port 22, which is the standard port for SSH.",
+            "topic": "SFTP Ports"
+          },
+          {
+            "question": "Why is SFTP considered more secure than standard FTP?",
+            "options": [
+              "It uses a single connection.",
+              "It does not require authentication.",
+              "It encrypts all data in transit.",
+              "It is only used for small files."
+            ],
+            "answer": "It encrypts all data in transit.",
+            "explanation": "SFTP encrypts all data, including credentials and file contents, making it more secure than standard FTP.",
+            "topic": "SFTP Security Advantages"
+          },
+          {
+            "question": "Does SFTP use separate control and data channels like FTP?",
+            "options": [
+              "Yes, it uses the same two channels.",
+              "No, it uses a single connection for both.",
+              "It uses three channels.",
+              "It depends on the configuration."
+            ],
+            "answer": "No, it uses a single connection for both.",
+            "explanation": "Unlike FTP, SFTP uses a single connection for both commands and data transfer.",
+            "topic": "SFTP Connection Model"
+          },
+          {
+            "question": "Which protocol would you recommend for transferring sensitive files?",
+            "options": [
+              "FTP",
+              "SFTP",
+              "HTTP",
+              "Telnet"
+            ],
+            "answer": "SFTP",
+            "explanation": "SFTP is recommended for transferring sensitive files due to its encryption capabilities.",
+            "topic": "FTP vs SFTP"
+          },
+          {
+            "question": "What protocol provides a secure shell for remote access?",
+            "options": [
+              "FTP",
+              "SFTP",
+              "SSH",
+              "Telnet"
+            ],
+            "answer": "SSH",
+            "explanation": "SSH (Secure Shell) provides a secure shell for remote access and is the underlying protocol for SFTP.",
+            "topic": "SSH Basics"
+          },
+          {
+            "question": "What type of communication is like someone giving a public speech?",
+            "options": [
+              "Connection-based",
+              "Connectionless",
+              "Client-server",
+              "Peer-to-peer"
+            ],
+            "answer": "Connectionless",
+            "explanation": "Connectionless communications would be like someone giving a public speech, where no direct connections are made.",
+            "topic": "Connection Types"
+          },
+          {
+            "question": "What is a benefit of connectionless communication?",
+            "options": [
+              "Guaranteed delivery",
+              "Lower overhead",
+              "Dedicated connection",
+              "High security"
+            ],
+            "answer": "Lower overhead",
+            "explanation": "While not explicitly stated as a 'benefit' in the notes, connectionless communication like a public speech implies less setup and teardown overhead compared to a dedicated phone call (connection-based).",
+            "topic": "Connection Types"
+          },
+          {
+            "question": "Is FTP generally preferred for transferring large files or small files?",
+            "options": [
+              "Small files",
+              "Large files",
+              "Both equally",
+              "Neither"
+            ],
+            "answer": "Large files",
+            "explanation": "FTP is described as fast and robust, implying suitability for significant data transfers.",
+            "topic": "FTP Characteristics"
+          },
+          {
+            "question": "What does TCP/IP stand for?",
+            "options": [
+              "Transfer Control Protocol/Internet Protocol",
+              "Transmission Control Protocol/Internet Protocol",
+              "Technical Control Protocol/Interface Protocol",
+              "Terminal Control Point/Internet Port"
+            ],
+            "answer": "Transmission Control Protocol/Internet Protocol",
+            "explanation": "FTP works over standard TCP/IP connections. TCP/IP stands for Transmission Control Protocol/Internet Protocol.",
+            "topic": "TCP/IP Basics"
+          },
+          {
+            "question": "What is the primary function of a server in a client-server model?",
+            "options": [
+              "To initiate requests",
+              "To provide services or resources",
+              "To manage user interfaces",
+              "To encrypt data"
+            ],
+            "answer": "To provide services or resources",
+            "explanation": "In a client-server protocol, the server provides services or resources that the client requests.",
+            "topic": "Client-Server Model"
+          },
+          {
+            "question": "What is the primary function of a client in a client-server model?",
+            "options": [
+              "To provide services",
+              "To manage networks",
+              "To request and use services or resources",
+              "To store data"
+            ],
+            "answer": "To request and use services or resources",
+            "explanation": "In a client-server protocol, the client requests and uses services or resources provided by the server.",
+            "topic": "Client-Server Model"
+          },
+          {
+            "question": "In FTP's active mode, which side initiates the data connection?",
+            "options": [
+              "The client",
+              "The server",
+              "Both simultaneously",
+              "A third-party intermediary"
+            ],
+            "answer": "The server",
+            "explanation": "In active mode, the server initiates the data connection back to the client. While not explicitly detailed, it's a fundamental aspect of active vs. passive FTP.",
+            "topic": "FTP Modes"
+          },
+          {
+            "question": "In FTP's passive mode, which side initiates the data connection?",
+            "options": [
+              "The client",
+              "The server",
+              "Both simultaneously",
+              "A third-party intermediary"
+            ],
+            "answer": "The client",
+            "explanation": "In passive mode, the client initiates both the control and data connections to the server. This is generally more firewall-friendly.",
+            "topic": "FTP Modes"
+          },
+          {
+            "question": "What is a common issue when using FTP in active mode through a firewall?",
+            "options": [
+              "Data corruption",
+              "Slow speeds",
+              "The server cannot establish the data connection back to the client",
+              "Authentication failures"
+            ],
+            "answer": "The server cannot establish the data connection back to the client",
+            "explanation": "Firewalls often block incoming connections initiated by the server in active mode, leading to connection issues.",
+            "topic": "FTP Firewall Issues"
+          },
+          {
+            "question": "Which FTP mode is generally preferred for traversing firewalls?",
+            "options": [
+              "Active mode",
+              "Passive mode",
+              "Secure mode",
+              "Direct mode"
+            ],
+            "answer": "Passive mode",
+            "explanation": "Passive mode is generally preferred for traversing firewalls because the client initiates both connections, making it easier for firewalls to manage.",
+            "topic": "FTP Firewall Issues"
+          },
+          {
+            "question": "Can FTP be secured using SSL/TLS?",
+            "options": [
+              "No, it's an old protocol.",
+              "Yes, through FTPS.",
+              "Only if custom encryption is implemented.",
+              "Only for the control channel."
+            ],
+            "answer": "Yes, through FTPS.",
+            "explanation": "While standard FTP is insecure, FTPS (FTP Secure) uses SSL/TLS to encrypt FTP communication.",
+            "topic": "FTP Security Options"
+          },
+          {
+            "question": "What is the primary advantage of SFTP over FTPS?",
+            "options": [
+              "SFTP is easier to configure.",
+              "SFTP uses fewer ports.",
+              "SFTP is a subsystem of SSH, offering robust, single-port encryption.",
+              "SFTP is faster for large files."
+            ],
+            "answer": "SFTP is a subsystem of SSH, offering robust, single-port encryption.",
+            "explanation": "SFTP's integration with SSH simplifies firewall configuration and leverages SSH's established security. FTPS often has more complex firewall issues due to dynamic data ports.",
+            "topic": "FTP vs SFTP"
+          },
+          {
+            "question": "Which of these is NOT a file transfer protocol mentioned?",
+            "options": [
+              "FTP",
+              "SFTP",
+              "HTTP",
+              "TFTP"
+            ],
+            "answer": "TFTP",
+            "explanation": "The document primarily discusses FTP and SFTP. TFTP (Trivial File Transfer Protocol) is another protocol but not detailed here.",
+            "topic": "Related Protocols"
+          },
+          {
+            "question": "What characteristic makes SFTP suitable for automated scripts?",
+            "options": [
+              "Its clear text transmission",
+              "Its robust encryption and single-port operation",
+              "Its multiple data channels",
+              "Its complex configuration"
+            ],
+            "answer": "Its robust encryption and single-port operation",
+            "explanation": "The robust encryption ensures security for automated transfers, and the single-port operation simplifies firewall rules for scripts.",
+            "topic": "SFTP Use Cases"
+          },
+          {
+            "question": "What is the primary concern when using standard FTP for authentication?",
+            "options": [
+              "Slow login times",
+              "Clear text transmission of credentials",
+              "Complex password requirements",
+              "Lack of two-factor authentication"
+            ],
+            "answer": "Clear text transmission of credentials",
+            "explanation": "Usernames and passwords are sent in clear text, making them vulnerable to interception.",
+            "topic": "FTP Security Risks"
+          },
+          {
+            "question": "Which protocol is known for its simplicity and being 'firewall-friendly' due to fewer ports?",
+            "options": [
+              "FTP (Active Mode)",
+              "FTP (Passive Mode)",
+              "SFTP",
+              "FTPS"
+            ],
+            "answer": "SFTP",
+            "explanation": "SFTP uses a single port (22) for all communication, making it much easier to configure firewalls compared to FTP's dynamic data ports.",
+            "topic": "SFTP Advantages"
+          },
+          {
+            "question": "In what scenario would you definitely prefer SFTP over FTP?",
+            "options": [
+              "Transferring publicly available data",
+              "Transferring large, non-sensitive files locally",
+              "Transferring confidential financial data over the internet",
+              "Quickly checking file existence on a server"
+            ],
+            "answer": "Transferring confidential financial data over the internet",
+            "explanation": "SFTP's encryption is critical for sensitive data transferred over public networks like the internet.",
+            "topic": "FTP vs SFTP"
+          },
+          {
+            "question": "What is the main role of a protocol in networking?",
+            "options": [
+              "To define hardware specifications",
+              "To provide a set of rules for communication",
+              "To manage user accounts",
+              "To design network topologies"
+            ],
+            "answer": "To provide a set of rules for communication",
+            "explanation": "Protocols define the rules and formats for how data is transmitted between networked devices.",
+            "topic": "Networking Basics"
+          },
+          {
+            "question": "What does a 'port' refer to in networking terms?",
+            "options": [
+              "A physical connection point on a router",
+              "A logical address that identifies a specific process or service",
+              "A type of network cable",
+              "A firewall rule"
+            ],
+            "answer": "A logical address that identifies a specific process or service",
+            "explanation": "Ports are logical addresses used to distinguish between different services running on a single host.",
+            "topic": "Networking Ports"
+          },
+          {
+            "question": "Which of the following describes a unicast transmission?",
+            "options": [
+              "One-to-many",
+              "One-to-all",
+              "One-to-one",
+              "One-to-closest"
+            ],
+            "answer": "One-to-one",
+            "explanation": "Unicast refers to a one-to-one transmission, meaning a single sender sending data to a single receiver.",
+            "topic": "Network Transmission Types"
+          },
+          {
+            "question": "When you browse a website, what type of transmission is typically occurring?",
+            "options": [
+              "Multicast",
+              "Broadcast",
+              "Unicast",
+              "Anycast"
+            ],
+            "answer": "Unicast",
+            "explanation": "When you browse a website, your computer sends a request to a specific web server, and that server sends a response back to your specific computer, which is a one-to-one (unicast) communication.",
+            "topic": "Network Transmission Types"
+          },
+          {
+            "question": "What is the purpose of an IP address?",
+            "options": [
+              "To identify a physical network interface card",
+              "To provide a unique numerical label for a device on a network",
+              "To store website content",
+              "To manage network cables"
+            ],
+            "answer": "To provide a unique numerical label for a device on a network",
+            "explanation": "An IP address uniquely identifies a device on an IP network.",
+            "topic": "IP Addressing"
+          },
+          {
+            "question": "Which type of transmission involves sending data from one sender to multiple specific receivers in a group?",
+            "options": [
+              "Unicast",
+              "Multicast",
+              "Broadcast",
+              "Anycast"
+            ],
+            "answer": "Multicast",
+            "explanation": "Multicast is a one-to-many transmission where data is sent from a single sender to multiple specified receivers who are part of a defined group.",
+            "topic": "Network Transmission Types"
+          },
+          {
+            "question": "An example of multicast transmission cited in the notes is:",
+            "options": [
+              "A phone call",
+              "Watching a live streaming video or listening to internet radio",
+              "Sending a global email",
+              "Accessing a website"
+            ],
+            "answer": "Watching a live streaming video or listening to internet radio",
+            "explanation": "Live streaming video or internet radio are examples where multiple subscribers receive the same stream from a single source, which is a multicast transmission.",
+            "topic": "Network Transmission Types"
+          },
+          {
+            "question": "What is a broadcast transmission?",
+            "options": [
+              "One-to-one communication",
+              "One-to-specific-group communication",
+              "One-to-all on the local network segment",
+              "One-to-closest server communication"
+            ],
+            "answer": "One-to-all on the local network segment",
+            "explanation": "Broadcast is a one-to-all transmission, specifically meaning a single sender sending data to all devices on the local network segment.",
+            "topic": "Network Transmission Types"
+          },
+          {
+            "question": "An example of broadcast transmission given in the notes is:",
+            "options": [
+              "A personal email",
+              "A public announcement over a loudspeaker",
+              "Video conferencing",
+              "Downloading a file"
+            ],
+            "answer": "A public announcement over a loudspeaker",
+            "explanation": "A public announcement over a loudspeaker is analogous to a broadcast, where everyone within range receives the message.",
+            "topic": "Network Transmission Types"
+          },
+          {
+            "question": "What is a key characteristic of a broadcast message?",
+            "options": [
+              "It is always encrypted.",
+              "It is addressed to a specific IP address.",
+              "All devices on the local segment receive and process it.",
+              "Only the intended recipient receives it."
+            ],
+            "answer": "All devices on the local segment receive and process it.",
+            "explanation": "With a broadcast, all devices on the local network segment receive and process the request, even if it's not specifically for them.",
+            "topic": "Network Transmission Types"
+          },
+          {
+            "question": "Which transmission type is used to send data from one sender to any one of a group of receivers, typically the closest one?",
+            "options": [
+              "Unicast",
+              "Multicast",
+              "Broadcast",
+              "Anycast"
+            ],
+            "answer": "Anycast",
+            "explanation": "Anycast is a one-to-closest transmission, where a single sender sends data to any one of a group of potential receivers, typically the one that is closest or most efficient to reach.",
+            "topic": "Network Transmission Types"
+          },
+          {
+            "question": "What common network technology utilizes anycast to improve content delivery?",
+            "options": [
+              "VPNs",
+              "Firewalls",
+              "Content Delivery Networks (CDNs)",
+              "Local Area Networks (LANs)"
+            ],
+            "answer": "Content Delivery Networks (CDNs)",
+            "explanation": "Anycast is commonly used in Content Delivery Networks (CDNs) to route user requests to the closest available server.",
+            "topic": "Anycast Use Cases"
+          },
+          {
+            "question": "If an organization has web content requested globally, which transmission type would help improve response times by routing users to the nearest server?",
+            "options": [
+              "Unicast",
+              "Multicast",
+              "Broadcast",
+              "Anycast"
+            ],
+            "answer": "Anycast",
+            "explanation": "With a CDN, anycast will route the request to the server that is closest to the requesting user, so the responses will be much faster.",
+            "topic": "Anycast Use Cases"
+          },
+          {
+            "question": "Do network administrators typically configure devices to specifically use unicast, multicast, broadcast, or anycast?",
+            "options": [
+              "Yes, always.",
+              "Only for unicast.",
+              "Almost never; it's a function of application/protocol design.",
+              "Only in cloud environments."
+            ],
+            "answer": "Almost never; it's a function of application/protocol design.",
+            "explanation": "Network administrators almost never have to configure any service or device to specifically use one or the other. For the most part, it's a function of the application design and/or the protocols being used.",
+            "topic": "Network Admin Role"
+          },
+          {
+            "question": "What is the primary focus for network administrators regarding transmission types?",
+            "options": [
+              "To always configure anycast.",
+              "To implement new transmission types.",
+              "To recognize when any given type is used when performing analysis on network traffic.",
+              "To ensure all traffic is unicast."
+            ],
+            "answer": "To recognize when any given type is used when performing analysis on network traffic.",
+            "explanation": "Their focus should just be on being able to distinguish the circumstances where any particular type would be used when performing analysis on network traffic.",
+            "topic": "Network Admin Role"
+          },
+          {
+            "question": "What allows FTP to be supported by just about every platform?",
+            "options": [
+              "Its complexity",
+              "Its reliance on proprietary hardware",
+              "Its operation over standard TCP/IP connections",
+              "Its encryption features"
+            ],
+            "answer": "Its operation over standard TCP/IP connections",
+            "explanation": "FTP is supported by just about every platform because it works over standard TCP/IP connections.",
+            "topic": "FTP Platform Support"
+          },
+          {
+            "question": "In a client-server protocol, who initiates the communication?",
+            "options": [
+              "The server",
+              "The client",
+              "A router",
+              "A firewall"
+            ],
+            "answer": "The client",
+            "explanation": "In a client-server model, the client initiates the connection and requests services from the server.",
+            "topic": "Client-Server Model"
+          },
+          {
+            "question": "Which of these is a secure version of FTP?",
+            "options": [
+              "HTTP",
+              "SMTP",
+              "SFTP",
+              "DNS"
+            ],
+            "answer": "SFTP",
+            "explanation": "SFTP (Secure File Transfer Protocol) is the secure version of FTP discussed in the notes.",
+            "topic": "FTP Security"
+          },
+          {
+            "question": "If you wanted to transfer a file and ensure its confidentiality, which protocol is best?",
+            "options": [
+              "FTP",
+              "SFTP",
+              "Telnet",
+              "TFTP"
+            ],
+            "answer": "SFTP",
+            "explanation": "SFTP encrypts data, ensuring confidentiality during file transfer.",
+            "topic": "FTP vs SFTP"
+          },
+          {
+            "question": "What is a common reason for slow responses in a globally distributed system with only one server?",
+            "options": [
+              "Too many clients",
+              "Lack of encryption",
+              "Geographical distance causing high latency",
+              "Insufficient bandwidth"
+            ],
+            "answer": "Geographical distance causing high latency",
+            "explanation": "If you only had one server in the United States, then that would be fine for the US-based clients, but clients in India would likely receive much slower responses due to geographical distance.",
+            "topic": "Anycast Benefits"
+          },
+          {
+            "question": "What is the primary benefit of using a CDN with anycast?",
+            "options": [
+              "Increased security",
+              "Reduced server costs",
+              "Faster response times for geographically dispersed users",
+              "Simpler network configuration"
+            ],
+            "answer": "Faster response times for geographically dispersed users",
+            "explanation": "With a CDN, when a request comes in, anycast will route the request to the server that is closest to the requesting user, so the responses will be much faster.",
+            "topic": "Anycast Benefits"
+          },
+          {
+            "question": "In the context of network traffic analysis, what is important for an administrator to do concerning transmission types?",
+            "options": [
+              "To constantly change them",
+              "To ignore them",
+              "To distinguish when any particular type is used",
+              "To configure them manually for every device"
+            ],
+            "answer": "To distinguish when any particular type is used",
+            "explanation": "Your focus should just be on being able to distinguish the circumstances where any particular type would be used when performing analysis on network traffic.",
+            "topic": "Network Admin Role"
+          },
+          {
+            "question": "What type of connection is established before data transmission in TCP/IP?",
+            "options": [
+              "Connectionless",
+              "Datagram-based",
+              "A reliable, ordered connection",
+              "An unreliable, unordered connection"
+            ],
+            "answer": "A reliable, ordered connection",
+            "explanation": "TCP is a connection-oriented protocol that establishes a reliable, ordered, and error-checked delivery of a stream of octets (bytes) between applications.",
+            "topic": "TCP/IP Basics"
+          },
+          {
+            "question": "Which of the following would NOT typically use a broadcast transmission?",
+            "options": [
+              "ARP requests",
+              "DHCP discovery",
+              "Live video streaming to a specific user",
+              "Router advertisements"
+            ],
+            "answer": "Live video streaming to a specific user",
+            "explanation": "Live video streaming to a specific user is typically unicast. Broadcasts are generally for discovery or local network-wide announcements.",
+            "topic": "Network Transmission Types"
+          },
+          {
+            "question": "SFTP uses encryption provided by:",
+            "options": [
+              "TLS",
+              "SSL",
+              "SSH",
+              "IPSec"
+            ],
+            "answer": "SSH",
+            "explanation": "SFTP operates as a subsystem of the Secure Shell (SSH) protocol, leveraging its encryption and authentication mechanisms.",
+            "topic": "SFTP Security"
+          },
+          {
+            "question": "What is the main drawback of standard FTP regarding sensitive data?",
+            "options": [
+              "It's too slow.",
+              "It's difficult to configure.",
+              "It transmits data in plain text.",
+              "It requires too many open ports."
+            ],
+            "answer": "It transmits data in plain text.",
+            "explanation": "Standard FTP's main drawback is its clear text transmission, making sensitive data vulnerable.",
+            "topic": "FTP Security Vulnerabilities"
+          },
+          {
+            "question": "When might unicast be a disadvantage?",
+            "options": [
+              "When sending data to only one recipient.",
+              "When distributing the same live data to many recipients simultaneously.",
+              "When a quick acknowledgment is needed.",
+              "When security is paramount."
+            ],
+            "answer": "When distributing the same live data to many recipients simultaneously.",
+            "explanation": "For many recipients receiving the same data (like live video), unicast would require sending separate streams to each, which is inefficient. Multicast is better for this scenario.",
+            "topic": "Network Transmission Types"
+          },
+          {
+            "question": "If you are trying to reach a server that has multiple instances across different data centers, what transmission type helps ensure you connect to the optimal one?",
+            "options": [
+              "Unicast",
+              "Multicast",
+              "Broadcast",
+              "Anycast"
+            ],
+            "answer": "Anycast",
+            "explanation": "Anycast routes the request to the 'closest' or 'best' available server instance among a group.",
+            "topic": "Anycast Use Cases"
+          },
+          {
+            "question": "Which port is associated with SSH, and consequently SFTP?",
+            "options": [
+              "20",
+              "21",
+              "22",
+              "23"
+            ],
+            "answer": "22",
+            "explanation": "SFTP typically operates over TCP Port 22, which is the standard port for SSH.",
+            "topic": "SFTP Ports"
+          },
+          {
+            "question": "What does a Content Delivery Network (CDN) primarily aim to improve?",
+            "options": [
+              "Data encryption",
+              "Network security",
+              "Content delivery speed and availability",
+              "Server hardware performance"
+            ],
+            "answer": "Content delivery speed and availability",
+            "explanation": "CDNs are designed to deliver content more efficiently and quickly to users by placing it geographically closer to them.",
+            "topic": "Anycast Use Cases"
+          },
+          {
+            "question": "What is the characteristic of connectionless communication regarding acknowledgments?",
+            "options": [
+              "It always requires an acknowledgment.",
+              "It uses implicit acknowledgments.",
+              "It does not require an acknowledgment from the recipient.",
+              "It uses a three-way handshake for acknowledgment."
+            ],
+            "answer": "It does not require an acknowledgment from the recipient.",
+            "explanation": "Similar to a public speech, there's no direct connection or expectation of an acknowledgment from each listener in connectionless communication.",
+            "topic": "Connection Types"
+          },
+          {
+            "question": "What is a security disadvantage of a broadcast transmission?",
+            "options": [
+              "It can be easily encrypted.",
+              "Only specific devices can receive it.",
+              "All devices on the local segment receive it, potentially exposing data to unintended recipients.",
+              "It requires a dedicated connection."
+            ],
+            "answer": "All devices on the local segment receive it, potentially exposing data to unintended recipients.",
+            "explanation": "Since all devices on the local segment receive broadcasts, it's generally not used for sensitive data.",
+            "topic": "Network Transmission Types"
+          },
+          {
+            "question": "Which protocol would you use for remote command-line access to a server securely?",
+            "options": [
+              "FTP",
+              "Telnet",
+              "HTTP",
+              "SSH"
+            ],
+            "answer": "SSH",
+            "explanation": "SSH (Secure Shell) is designed for secure remote command-line access and other secure network services.",
+            "topic": "SSH Basics"
+          },
+          {
+            "question": "Is authentication optional for SFTP connections?",
+            "options": [
+              "Yes, it's configurable.",
+              "No, it's mandatory and handled by SSH.",
+              "Only for file transfers, not commands.",
+              "It depends on the client software."
+            ],
+            "answer": "No, it's mandatory and handled by SSH.",
+            "explanation": "SFTP leverages SSH's robust authentication mechanisms, making it mandatory for secure access.",
+            "topic": "SFTP Security"
+          },
+          {
+            "question": "What is the primary difference in how active and passive FTP data connections are established?",
+            "options": [
+              "Active uses UDP, Passive uses TCP.",
+              "Active is server-initiated, Passive is client-initiated.",
+              "Active is encrypted, Passive is not.",
+              "Active uses Port 21, Passive uses Port 20."
+            ],
+            "answer": "Active is server-initiated, Passive is client-initiated.",
+            "explanation": "In active FTP, the server initiates the data connection to the client. In passive FTP, the client initiates the data connection to the server.",
+            "topic": "FTP Modes"
+          },
+          {
+            "question": "Can you use SFTP to transfer files between Windows and Linux systems?",
+            "options": [
+              "No, it's OS-specific.",
+              "Yes, it's platform-independent because it relies on SSH.",
+              "Only with special converters.",
+              "Only if both are on the same local network."
+            ],
+            "answer": "Yes, it's platform-independent because it relies on SSH.",
+            "explanation": "SSH and SFTP are designed to be platform-independent, working across various operating systems.",
+            "topic": "SFTP Platform Support"
+          },
+          {
+            "question": "What is the general performance characteristic of connection-based communication compared to connectionless?",
+            "options": [
+              "Usually faster for single, quick messages.",
+              "Higher overhead but more reliable for sustained data transfer.",
+              "Always unencrypted.",
+              "Less suitable for large data streams."
+            ],
+            "answer": "Higher overhead but more reliable for sustained data transfer.",
+            "explanation": "The setup (like dialing a phone) adds overhead, but once established, the connection provides reliable and ordered delivery, suitable for sustained transfers.",
+            "topic": "Connection Types"
+          },
+          {
+            "question": "Why would an organization choose SFTP over a network drive for file sharing with external partners?",
+            "options": [
+              "Network drives are not secure.",
+              "SFTP allows for controlled access and secure transfers over the internet without exposing internal network resources.",
+              "SFTP is faster than network drives.",
+              "SFTP does not require authentication."
+            ],
+            "answer": "SFTP allows for controlled access and secure transfers over the internet without exposing internal network resources.",
+            "explanation": "SFTP is ideal for secure external file transfer, as it provides a robust, encrypted method without granting direct network drive access.",
+            "topic": "SFTP Use Cases"
+          },
+          {
+            "question": "If a network device is configured to only allow outgoing connections, which FTP mode would likely fail?",
+            "options": [
+              "Active Mode",
+              "Passive Mode",
+              "SFTP",
+              "Both Active and Passive Mode"
+            ],
+            "answer": "Active Mode",
+            "explanation": "Active FTP requires the server to initiate an *incoming* data connection to the client, which would be blocked by an outgoing-only firewall.",
+            "topic": "FTP Firewall Issues"
+          }
+        ]
+      }
+]

@@ -1,0 +1,499 @@
+[
+    {
+        "name": "Routing & Switching Technologies",
+        "quizzes": [
+          {
+            "question": "What is 'static routing'?",
+            "options": [
+              "Routes between networks are automatically discovered by routers.",
+              "Routes between source and destination networks must be manually configured into the router.",
+              "Routes are determined by network traffic conditions.",
+              "Routes are only used for internal network communication."
+            ],
+            "answer": "Routes between source and destination networks must be manually configured into the router.",
+            "explanation": "Static routing means that the routes between source and destination networks must be manually configured or preprogrammed into the router.",
+            "topic": "Static Routing"
+          },
+          {
+            "question": "In what scenarios is static routing commonly implemented?",
+            "options": [
+              "Large, constantly changing networks.",
+              "When changes to routes are not expected and/or the number of routes is fairly small.",
+              "Networks with heavy Internet traffic.",
+              "Environments requiring automatic route updates."
+            ],
+            "answer": "When changes to routes are not expected and/or the number of routes is fairly small.",
+            "explanation": "Static routing is commonly done in scenarios where changes to those routes are not expected and/or the number of routes that must be configured is fairly small.",
+            "topic": "Static Routing"
+          },
+          {
+            "question": "What is another term for static routing?",
+            "options": [
+              "Adaptive routing",
+              "Dynamic routing",
+              "Nonadaptive routing",
+              "Autonomous routing"
+            ],
+            "answer": "Nonadaptive routing",
+            "explanation": "Static routing is also known as nonadaptive routing, in contrast to dynamic or adaptive routing.",
+            "topic": "Static Routing"
+          },
+          {
+            "question": "What happens if a change occurs in a network using static routing?",
+            "options": [
+              "Routers automatically adapt to the change.",
+              "The change has to be dealt with manually.",
+              "Network communication stops entirely.",
+              "A new router is automatically deployed."
+            ],
+            "answer": "The change has to be dealt with manually.",
+            "explanation": "With static or nonadaptive routing, if a change does occur then it has to be dealt with manually.",
+            "topic": "Static Routing"
+          },
+          {
+            "question": "What are 'routing tables'?",
+            "options": [
+              "Lists of connected network devices.",
+              "Collections of all routes known to a router.",
+              "Databases of IP addresses and MAC addresses.",
+              "Configuration files for switches."
+            ],
+            "answer": "Collections of all routes known to a router.",
+            "explanation": "Routing tables are the collections of all routes known to that router.",
+            "topic": "Routing Tables"
+          },
+          {
+            "question": "What is 'dynamic routing'?",
+            "options": [
+              "Routes are always configured manually.",
+              "Routers can exchange information with each other to adapt to changing network conditions.",
+              "Routing decisions are made based on pre-set, unchanging rules.",
+              "It only works with a single preferred route."
+            ],
+            "answer": "Routers can exchange information with each other to adapt to changing network conditions.",
+            "explanation": "Dynamic or adaptive routing is whereby routers can exchange information with each other in order to adapt to changing conditions.",
+            "topic": "Dynamic Routing"
+          },
+          {
+            "question": "What is a 'routing metric'?",
+            "options": [
+              "A measure of a router's processing speed.",
+              "A numerical value that helps a router determine the best path to a destination.",
+              "The physical distance between two routers.",
+              "The amount of data transferred over a link."
+            ],
+            "answer": "A numerical value that helps a router determine the best path to a destination.",
+            "explanation": "A routing metric is a value which helps a router make decisions and determine the best path to a given destination.",
+            "topic": "Routing Metrics"
+          },
+          {
+            "question": "Which routing metric is commonly associated with RIP (Routing Information Protocol)?",
+            "options": [
+              "Bandwidth",
+              "Delay",
+              "Hop count",
+              "Load"
+            ],
+            "answer": "Hop count",
+            "explanation": "The Routing Information Protocol or RIP uses only a simple hop count as its metric, where each router or gateway is considered a 'hop'.",
+            "topic": "Routing Metrics"
+          },
+          {
+            "question": "What is 'administrative distance' in routing?",
+            "options": [
+              "A measure of the physical distance between routers.",
+              "A metric used by routing protocols to determine the reliability of a route.",
+              "A numerical value representing the trustworthiness of a routing source.",
+              "The time it takes for a packet to reach its destination."
+            ],
+            "answer": "A numerical value representing the trustworthiness of a routing source.",
+            "explanation": "Administrative distance is a numerical value which indicates the trustworthiness of a routing source, with lower values indicating higher trustworthiness.",
+            "topic": "Administrative Distance"
+          },
+          {
+            "question": "Which of the following routing protocols has the highest administrative distance by default (least trusted)?",
+            "options": [
+              "Connected interface",
+              "OSPF",
+              "External BGP",
+              "RIP"
+            ],
+            "answer": "RIP",
+            "explanation": "RIP has a default administrative distance of 120, which is relatively high, indicating lower trustworthiness compared to others like directly connected (0) or OSPF (110).",
+            "topic": "Administrative Distance"
+          },
+          {
+            "question": "What type of routing protocol is OSPF (Open Shortest Path First)?",
+            "options": [
+              "Distance-vector",
+              "Link-state",
+              "Hybrid",
+              "Path-vector"
+            ],
+            "answer": "Link-state",
+            "explanation": "Link-state routing protocols, like OSPF, use a common database of the entire network map and determine the best path by calculating the shortest path to all destinations.",
+            "topic": "Link-State vs. Distance-Vector"
+          },
+          {
+            "question": "How do distance-vector routing protocols operate?",
+            "options": [
+              "By building a complete map of the entire network.",
+              "By calculating the shortest path to all destinations using a common database.",
+              "By sharing their routing tables with their directly connected neighbors, which then share with their neighbors, and so on.",
+              "By using administrative distance as their only metric."
+            ],
+            "answer": "By sharing their routing tables with their directly connected neighbors, which then share with their neighbors, and so on.",
+            "explanation": "Distance-vector routing protocols work by sharing their routing tables with their directly connected neighbors, which then share with their neighbors, and so on.",
+            "topic": "Link-State vs. Distance-Vector"
+          },
+          {
+            "question": "What is the key difference in how link-state routing protocols learn about network topology compared to distance-vector protocols?",
+            "options": [
+              "Link-state protocols rely on hop counts only.",
+              "Link-state protocols share entire routing tables with all routers.",
+              "Link-state protocols maintain a common database of the entire network map.",
+              "Link-state protocols only learn about directly connected networks."
+            ],
+            "answer": "Link-state protocols maintain a common database of the entire network map.",
+            "explanation": "Link-state routing protocols operate by sharing a common database of the entire network map, allowing each router to independently calculate the shortest path.",
+            "topic": "Link-State vs. Distance-Vector"
+          },
+          {
+            "question": "What is an 'Autonomous System' (AS)?",
+            "options": [
+              "A single router managed by a network administrator.",
+              "A collection of connected IP routing prefixes under the control of one or more network operators that presents a common, clearly defined routing policy to the Internet.",
+              "A type of wireless network.",
+              "A device that automatically assigns IP addresses."
+            ],
+            "answer": "A collection of connected IP routing prefixes under the control of one or more network operators that presents a common, clearly defined routing policy to the Internet.",
+            "explanation": "An Autonomous System (AS) is a collection of connected IP routing prefixes under the control of one or more network operators that presents a common, clearly defined routing policy to the Internet.",
+            "topic": "Autonomous Systems"
+          },
+          {
+            "question": "Which type of routing protocol is used for routing within an Autonomous System?",
+            "options": [
+              "Exterior Gateway Protocol (EGP)",
+              "Interior Gateway Protocol (IGP)",
+              "Border Gateway Protocol (BGP)",
+              "Static Routing Protocol"
+            ],
+            "answer": "Interior Gateway Protocol (IGP)",
+            "explanation": "Interior Gateway Protocols (IGPs) are used for routing within an Autonomous System.",
+            "topic": "Interior vs. Exterior Gateway Protocols"
+          },
+          {
+            "question": "Which protocol is the only Exterior Gateway Protocol (EGP) used today?",
+            "options": [
+              "RIP",
+              "OSPF",
+              "EIGRP",
+              "BGP (Border Gateway Protocol)"
+            ],
+            "answer": "BGP (Border Gateway Protocol)",
+            "explanation": "The Border Gateway Protocol or BGP is an Exterior Gateway Protocol that is designed to route between Autonomous Systems.",
+            "topic": "Interior vs. Exterior Gateway Protocols"
+          },
+          {
+            "question": "What is the primary function of a network switch?",
+            "options": [
+              "To route traffic between different networks.",
+              "To connect devices within the same network segment by using MAC addresses.",
+              "To convert analog signals to digital signals.",
+              "To assign IP addresses to network devices."
+            ],
+            "answer": "To connect devices within the same network segment by using MAC addresses.",
+            "explanation": "Switches are devices on a network that are used to connect devices within the same segment of the network by using their MAC addresses.",
+            "topic": "Switching"
+          },
+          {
+            "question": "What does a switch do when it receives a frame with an unknown destination MAC address?",
+            "options": [
+              "It drops the frame.",
+              "It sends the frame back to the source.",
+              "It floods the frame out all ports except the receiving port.",
+              "It stores the frame until the destination is known."
+            ],
+            "answer": "It floods the frame out all ports except the receiving port.",
+            "explanation": "If a switch does not have the destination MAC address in its MAC address table, it will flood the frame out all ports except the receiving port.",
+            "topic": "Switching"
+          },
+          {
+            "question": "What is the purpose of the 'MAC address table' on a switch?",
+            "options": [
+              "To store IP addresses of connected devices.",
+              "To map MAC addresses to specific switch ports.",
+              "To record the routing metrics of different paths.",
+              "To store information about network protocols."
+            ],
+            "answer": "To map MAC addresses to specific switch ports.",
+            "explanation": "The MAC address table stores MAC addresses and the ports to which they are connected, allowing the switch to forward frames efficiently.",
+            "topic": "Switching"
+          },
+          {
+            "question": "What does ARP stand for?",
+            "options": [
+              "Address Resolution Protocol",
+              "Automatic Routing Protocol",
+              "Advanced Resource Placement",
+              "Application Request Process"
+            ],
+            "answer": "Address Resolution Protocol",
+            "explanation": "ARP stands for Address Resolution Protocol.",
+            "topic": "Address Resolution Protocol (ARP)"
+          },
+          {
+            "question": "What is the primary function of ARP?",
+            "options": [
+              "To resolve IP addresses to domain names.",
+              "To resolve MAC addresses to IP addresses.",
+              "To resolve IP addresses to MAC addresses.",
+              "To assign IP addresses dynamically."
+            ],
+            "answer": "To resolve IP addresses to MAC addresses.",
+            "explanation": "The primary function of ARP is to resolve an IP address to a MAC address.",
+            "topic": "Address Resolution Protocol (ARP)"
+          },
+          {
+            "question": "What happens if an ARP request does not receive a response?",
+            "options": [
+              "The system will continue to try and transmit the data.",
+              "The system will store the MAC address as unknown.",
+              "The system will not be able to communicate with that IP address.",
+              "The system will use a default MAC address."
+            ],
+            "answer": "The system will not be able to communicate with that IP address.",
+            "explanation": "If the ARP request is not answered, the local computer will not be able to communicate with that particular IP address.",
+            "topic": "Address Resolution Protocol (ARP)"
+          },
+          {
+            "question": "What is the default Maximum Transmission Unit (MTU) value for Ethernet?",
+            "options": [
+              "500 bytes",
+              "1000 bytes",
+              "1500 bytes",
+              "9000 bytes"
+            ],
+            "answer": "1500 bytes",
+            "explanation": "The default Maximum Transmission Unit or MTU value for Ethernet is 1,500 bytes.",
+            "topic": "Maximum Transmission Unit (MTU)"
+          },
+          {
+            "question": "What is 'fragmentation' in the context of MTU?",
+            "options": [
+              "Combining multiple small packets into one large packet.",
+              "Breaking down a packet that is larger than the MTU into smaller pieces.",
+              "Encrypting packets for secure transmission.",
+              "Discarding packets that are too large."
+            ],
+            "answer": "Breaking down a packet that is larger than the MTU into smaller pieces.",
+            "explanation": "Fragmentation is the process of breaking down a packet that is larger than the MTU into smaller pieces so they can traverse the network link.",
+            "topic": "Maximum Transmission Unit (MTU)"
+          },
+          {
+            "question": "What protocol is used by a device to return a message to the sender if a packet is too large and cannot be fragmented?",
+            "options": [
+              "TCP",
+              "UDP",
+              "ICMP (Internet Control Message Protocol)",
+              "FTP"
+            ],
+            "answer": "ICMP (Internet Control Message Protocol)",
+            "explanation": "If a device has a smaller MTU value and a packet is too large and cannot be fragmented, it will return a message to the sender using the ICMP (Internet Control Message Protocol).",
+            "topic": "Maximum Transmission Unit (MTU)"
+          },
+          {
+            "question": "What is a 'jumbo frame'?",
+            "options": [
+              "Any frame that is smaller than the standard MTU of 1,500 bytes.",
+              "Any frame that is larger than the standard MTU of 1,500 bytes.",
+              "A frame with encrypted data.",
+              "A frame used for broadcasting only."
+            ],
+            "answer": "Any frame that is larger than the standard MTU of 1,500 bytes.",
+            "explanation": "A jumbo frame is any frame that is larger than the standard MTU of 1,500 bytes.",
+            "topic": "Jumbo Frames"
+          },
+          {
+            "question": "What is a common MTU value for jumbo frames?",
+            "options": [
+              "1,500 bytes",
+              "4,000 bytes",
+              "9,000 bytes",
+              "65,535 bytes"
+            ],
+            "answer": "9,000 bytes",
+            "explanation": "Jumbo frames commonly have an MTU value of 9,000 bytes.",
+            "topic": "Jumbo Frames"
+          },
+          {
+            "question": "What is the benefit of using jumbo frames?",
+            "options": [
+              "They increase the number of packets sent, improving performance.",
+              "They reduce the amount of data sent in each packet.",
+              "Much more data can be sent in fewer packets, which can help to improve performance.",
+              "They are only useful on slow networks."
+            ],
+            "answer": "Much more data can be sent in fewer packets, which can help to improve performance.",
+            "explanation": "By allowing jumbo frames, much more data can be sent in fewer packets, which can help to improve performance, particularly on network backbones that are 1 gigabyte or higher in speed.",
+            "topic": "Jumbo Frames"
+          },
+          {
+            "question": "What are 'super jumbo frames'?",
+            "options": [
+              "Frames with an MTU value exactly 9,000 bytes.",
+              "Frames with an MTU value higher than 9,000 bytes.",
+              "Frames that are smaller than standard MTU.",
+              "Frames used only for IPv6."
+            ],
+            "answer": "Frames with an MTU value higher than 9,000 bytes.",
+            "explanation": "For the highest speed networks you can even implement super jumbo frames which allow MTU values even higher than 9,000 bytes.",
+            "topic": "Jumbo Frames"
+          },
+          {
+            "question": "What is the theoretical maximum MTU value in IPv4 for super jumbo frames?",
+            "options": [
+              "9,000 bytes",
+              "16,384 bytes",
+              "32,768 bytes",
+              "65,535 bytes"
+            ],
+            "answer": "65,535 bytes",
+            "explanation": "Super jumbo frames can have a theoretical value in IP version 4 of up to 65,535 bytes.",
+            "topic": "Jumbo Frames"
+          },
+          {
+            "question": "When should the default MTU of 1,500 bytes generally be changed?",
+            "options": [
+              "Always, to maximize performance.",
+              "Only when encountering a specific reason to change it on any portion of a communications link.",
+              "Never, as it always leads to performance issues.",
+              "Only for networks slower than 1 gigabyte."
+            ],
+            "answer": "Only when encountering a specific reason to change it on any portion of a communications link.",
+            "explanation": "In most scenarios, the default MTU of 1,500 bytes is likely going to be fine, so unless you encounter a specific reason to change it, you can generally leave it set at its default.",
+            "topic": "Maximum Transmission Unit (MTU)"
+          },
+          {
+            "question": "What type of network is most likely to benefit from the implementation of jumbo frames?",
+            "options": [
+              "Very slow networks.",
+              "Network backbones that are 1 gigabyte or higher in speed.",
+              "Small home networks.",
+              "Wireless networks with low bandwidth."
+            ],
+            "answer": "Network backbones that are 1 gigabyte or higher in speed.",
+            "explanation": "Jumbo frames can help to improve performance, particularly on network backbones that are 1 gigabyte or higher in speed.",
+            "topic": "Jumbo Frames"
+          },
+          {
+            "question": "What happens if a switch's MAC address table fills up?",
+            "options": [
+              "The switch stops working.",
+              "The switch starts flooding all unknown unicast frames out all ports.",
+              "The switch automatically clears its table.",
+              "The switch converts to a router."
+            ],
+            "answer": "The switch starts flooding all unknown unicast frames out all ports.",
+            "explanation": "If a MAC address table fills up, the switch will start acting more like a hub, flooding all unknown unicast frames out all ports.",
+            "topic": "Switching"
+          },
+          {
+            "question": "What are the two primary components that comprise a routing table entry?",
+            "options": [
+              "Source IP address and Destination MAC address.",
+              "Network address and the interface through which packets should be forwarded.",
+              "Host name and DNS server.",
+              "Subnet mask and default gateway."
+            ],
+            "answer": "Network address and the interface through which packets should be forwarded.",
+            "explanation": "Every routing table entry includes at least two key components: the network address and the interface through which packets should be forwarded.",
+            "topic": "Routing Tables"
+          },
+          {
+            "question": "What is the administrative distance of a directly connected interface?",
+            "options": [
+              "1",
+              "0",
+              "10",
+              "100"
+            ],
+            "answer": "0",
+            "explanation": "Directly connected interfaces have an administrative distance of 0, meaning they are the most trustworthy source of routing information.",
+            "topic": "Administrative Distance"
+          },
+          {
+            "question": "Why is it important for routers to use routing metrics?",
+            "options": [
+              "To simplify network administration.",
+              "To ensure all packets take the longest path.",
+              "To help them make intelligent decisions on the best path to a given destination.",
+              "To limit the number of networks they can connect to."
+            ],
+            "answer": "To help them make intelligent decisions on the best path to a given destination.",
+            "explanation": "Routing metrics are used to help a router make decisions and determine the best path to a given destination, especially when multiple paths exist.",
+            "topic": "Routing Metrics"
+          },
+          {
+            "question": "Which of the following is an example of an Interior Gateway Protocol (IGP)?",
+            "options": [
+              "BGP",
+              "OSPF",
+              "EIGRP",
+              "Both OSPF and EIGRP"
+            ],
+            "answer": "Both OSPF and EIGRP",
+            "explanation": "OSPF and EIGRP (Enhanced Interior Gateway Routing Protocol) are examples of Interior Gateway Protocols.",
+            "topic": "Interior vs. Exterior Gateway Protocols"
+          },
+          {
+            "question": "When a device wants to send data to another device on the same local network, what does it typically use to find the destination's MAC address?",
+            "options": [
+              "DNS queries",
+              "ARP requests",
+              "Routing tables",
+              "DHCP servers"
+            ],
+            "answer": "ARP requests",
+            "explanation": "When a device wants to communicate with another device on the same local network, it uses ARP to find the destination's MAC address given its IP address.",
+            "topic": "Address Resolution Protocol (ARP)"
+          },
+          {
+            "question": "What does a switch do if it already has the destination MAC address in its table?",
+            "options": [
+              "It floods the frame out all ports.",
+              "It sends an ARP request.",
+              "It forwards the frame only out the port connected to the destination device.",
+              "It discards the frame."
+            ],
+            "answer": "It forwards the frame only out the port connected to the destination device.",
+            "explanation": "If a switch already has the destination MAC address in its table, it will forward the frame only out the specific port that connects to the destination device, leading to efficient communication.",
+            "topic": "Switching"
+          },
+          {
+            "question": "What is a primary consideration when manually configuring static routes?",
+            "options": [
+              "The router's CPU utilization.",
+              "The number of routes to be configured should be small.",
+              "The administrative distance must be set to 0.",
+              "All interfaces must be directly connected."
+            ],
+            "answer": "The number of routes to be configured should be small.",
+            "explanation": "Static routing is best suited for scenarios where the number of routes that must be configured is fairly small, as any changes require manual intervention.",
+            "topic": "Static Routing"
+          },
+          {
+            "question": "What is the typical administrative overhead associated with static routing in a small network?",
+            "options": [
+              "Very high due to frequent changes.",
+              "Significant, requiring constant monitoring.",
+              "Typically not much, as there is often only a single or preferred route.",
+              "Higher than dynamic routing."
+            ],
+            "answer": "Typically not much, as there is often only a single or preferred route.",
+            "explanation": "With static routing, the administrative overhead typically doesn't present much of an issue because there is often only a single or a preferred route for traffic to reach its destination.",
+            "topic": "Static Routing"
+          }
+        ]
+      }
+]

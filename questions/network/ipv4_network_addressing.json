@@ -1,0 +1,511 @@
+[
+    {
+        "name": "IPv4 Network Addressing",
+        "quizzes": [
+          {
+            "question": "What does RFC stand for in the context of TCP/IP development?",
+            "options": [
+              "Request for Comment",
+              "Recommended Feature Control",
+              "Routing Functionality Control",
+              "Resource File Configuration"
+            ],
+            "answer": "Request for Comment",
+            "explanation": "RFC stands for Request for Comment, a process by which TCP/IP is developed and continues to be developed. ",
+            "topic": "RFC 1918"
+          },
+          {
+            "question": "When was RFC 1918, which proposed public and private IP addresses, implemented?",
+            "options": [
+              "1986",
+              "1996",
+              "2006",
+              "2016"
+            ],
+            "answer": "1996",
+            "explanation": "Public and private IP addresses were proposed in RFC 1918, which was implemented in 1996. ",
+            "topic": "RFC 1918"
+          },
+          {
+            "question": "Which RFC 1918 network category is described as a LAN only with no external communication required?",
+            "options": [
+              "Category 1",
+              "Category 2",
+              "Category 3",
+              "Category 4"
+            ],
+            "answer": "Category 1",
+            "explanation": "RFC 1918 categorized network types, including Category 1, which is a LAN only with no kind of external communication required. ",
+            "topic": "RFC 1918"
+          },
+          {
+            "question": "What is the primary reason why both public and private IP addresses are used with IPv4?",
+            "options": [
+              "To enhance network security",
+              "Due to the unanticipated growth of the Internet",
+              "To simplify network configuration",
+              "To improve data transfer speeds"
+            ],
+            "answer": "Due to the unanticipated growth of the Internet",
+            "explanation": "The primary reason why both types of addresses are used with IPv4 is simply due to the unanticipated growth of the Internet, as 4 billion addresses are not enough to publicly address every device. ",
+            "topic": "Public vs. Private IP Addresses"
+          },
+          {
+            "question": "What is the total number of possible addresses when using IPv4?",
+            "options": [
+              "Approximately 1 billion",
+              "Approximately 2 billion",
+              "Approximately 4 billion",
+              "Approximately 8 billion"
+            ],
+            "answer": "Approximately 4 billion",
+            "explanation": "In IPv4, the address is made up of 32 bits, which means there are 2 to the power of 32 possible addresses, approximately 4 billion in total. ",
+            "topic": "Public vs. Private IP Addresses"
+          },
+          {
+            "question": "Who typically manages and assigns public IP addresses?",
+            "options": [
+              "Network Administrators",
+              "Operating Systems",
+              "Internet Service Providers",
+              "Device Manufacturers"
+            ],
+            "answer": "Internet Service Providers",
+            "explanation": "Public addresses are used more sparingly and in most cases, they're managed and assigned by your Internet service provider. ",
+            "topic": "Public vs. Private IP Addresses"
+          },
+          {
+            "question": "Which of the following IP address ranges is commonly seen in home environments and starts with 192.168?",
+            "options": [
+              "Class A private range",
+              "Class B private range",
+              "Class C private range",
+              "Public IP range"
+            ],
+            "answer": "Class C private range",
+            "explanation": "If you look at the IP addresses for any of the devices in your home, it's quite likely the address begins with something like 192.168.something.something, which falls under the Class C private range. ",
+            "topic": "Public vs. Private IP Addresses"
+          },
+          {
+            "question": "What is the primary characteristic of public IP addresses?",
+            "options": [
+              "They are reserved for internal LANs only.",
+              "They are never visible on the public Internet.",
+              "They need to be unique on the public Internet.",
+              "They are assigned automatically by APIPA."
+            ],
+            "answer": "They need to be unique on the public Internet.",
+            "explanation": "Public addresses do need to be unique on the public Internet. ",
+            "topic": "Public vs. Private IP Addresses"
+          },
+          {
+            "question": "Which of the following describes private IP addresses?",
+            "options": [
+              "They are visible to anyone on the Internet.",
+              "They are used for external communication only.",
+              "They are reserved portions of the overall address space for internal LANs only.",
+              "They require registration with a registration authority."
+            ],
+            "answer": "They are reserved portions of the overall address space for internal LANs only.",
+            "explanation": "Private IP addresses on their own do not have access to the Internet; they're reserved portions of the overall address space dedicated for use on internal LANs only. ",
+            "topic": "Public vs. Private IP Addresses"
+          },
+          {
+            "question": "What is the Class A private IP address range?",
+            "options": [
+              "10.0.0.0 through to 10.255.255.255",
+              "172.16.0.0 through 172.31.255.255",
+              "192.168.0.0 through 192.168.255.255",
+              "1.0.0.0 through 1.255.255.255"
+            ],
+            "answer": "10.0.0.0 through to 10.255.255.255",
+            "explanation": "The first range of addresses known as Class A goes from 10.0.0.0 through to 10.255.255.255. ",
+            "topic": "Private IP Address Ranges"
+          },
+          {
+            "question": "Which subnet mask is used by default for Class C private IP addresses?",
+            "options": [
+              "255.0.0.0",
+              "255.255.0.0",
+              "255.255.255.0",
+              "0.0.0.0"
+            ],
+            "answer": "255.255.255.0",
+            "explanation": "Class C goes from 192.168.0.0 through 192.168.255.255, which by default uses a 24-bit subnet mask or 255.255.255.0. ",
+            "topic": "Private IP Address Ranges"
+          },
+          {
+            "question": "What is the purpose of a default gateway in a TCP/IP configuration?",
+            "options": [
+              "To assign IP addresses to devices.",
+              "To translate private IP addresses to public IP addresses.",
+              "To enable a system to communicate with systems on another network.",
+              "To diagnose network adapter issues."
+            ],
+            "answer": "To enable a system to communicate with systems on another network.",
+            "explanation": "The default gateway is the IP address of the router on your network, which itself is what enables your system to communicate with systems on another network, such as the Internet. ",
+            "topic": "Default Gateway"
+          },
+          {
+            "question": "What happens if a system does not have an address for a default gateway in its TCP/IP configuration?",
+            "options": [
+              "It will only be able to communicate with the Internet.",
+              "It cannot communicate outside of its local network.",
+              "It will automatically assign itself a link-local address.",
+              "It will use the loopback address for all communication."
+            ],
+            "answer": "It cannot communicate outside of its local network.",
+            "explanation": "Without an address for a default gateway in your local TCP/IP configuration, your system cannot communicate outside of your network, whether that means the Internet or even just another network in your own environment. ",
+            "topic": "Default Gateway"
+          },
+          {
+            "question": "What is the common term used interchangeably with 'gateway' these days?",
+            "options": [
+              "Switch",
+              "Hub",
+              "Router",
+              "Server"
+            ],
+            "answer": "Router",
+            "explanation": "You'll often hear the term gateway and router used quite interchangeably these days, as the device itself is referred to as a router, but its functionality is to act as a gateway. ",
+            "topic": "Default Gateway"
+          },
+          {
+            "question": "What is the IPv4 loopback address?",
+            "options": [
+              "192.168.0.1",
+              "10.0.0.1",
+              "127.0.0.1",
+              "169.254.0.1"
+            ],
+            "answer": "127.0.0.1",
+            "explanation": "In IPv4 the loopback address is always 127.0.0.1. ",
+            "topic": "Loopback Address"
+          },
+          {
+            "question": "What is the primary use of the loopback address?",
+            "options": [
+              "To communicate with other devices on the LAN.",
+              "To access the public Internet.",
+              "For diagnostic purposes to test network adapter functionality.",
+              "To assign unique IP addresses automatically."
+            ],
+            "answer": "For diagnostic purposes to test network adapter functionality.",
+            "explanation": "The loopback address can be used for diagnostic purposes, for example, to test if a newly installed network adapter is working by pinging 127.0.0.1. ",
+            "topic": "Loopback Address"
+          },
+          {
+            "question": "What type of connectivity does a link-local address provide?",
+            "options": [
+              "Connectivity to the Internet.",
+              "Connectivity within the local network only.",
+              "Connectivity to other subnets.",
+              "Connectivity to routers only."
+            ],
+            "answer": "Connectivity within the local network only.",
+            "explanation": "The link-local address can be used to provide systems with connectivity within the local network only. ",
+            "topic": "Link-Local Address"
+          },
+          {
+            "question": "What process is invoked when client systems cannot receive their IP addresses automatically from a DHCP server?",
+            "options": [
+              "Network Address Translation (NAT)",
+              "Address Resolution Protocol (ARP)",
+              "Automatic Private IP Addressing (APIPA)",
+              "Extended Unique Identifier (EUI-64)"
+            ],
+            "answer": "Automatic Private IP Addressing (APIPA)",
+            "explanation": "When the DHCP server goes down, client systems cannot receive their addresses, which then invokes a process known as Automatic IP Addressing or APIPA. ",
+            "topic": "Automatic Private IP Addressing (APIPA)"
+          },
+          {
+            "question": "What is the IPv4 address range for APIPA?",
+            "options": [
+              "10.0.0.0 - 10.255.255.255",
+              "172.16.0.0 - 172.31.255.255",
+              "192.168.0.0 - 192.168.255.255",
+              "169.254.0.0 - 169.254.255.255"
+            ],
+            "answer": "169.254.0.0 - 169.254.255.255",
+            "explanation": "In IPv4, the APIPA range is always 169.254.0.0 through to 169.254.255.255. ",
+            "topic": "Automatic Private IP Addressing (APIPA)"
+          },
+          {
+            "question": "What does an APIPA address on a device indicate about the network?",
+            "options": [
+              "The router is configured incorrectly.",
+              "The DHCP server has failed.",
+              "The device has full Internet access.",
+              "The network is using static IP addressing."
+            ],
+            "answer": "The DHCP server has failed.",
+            "explanation": "If you find these addresses on any device in your network, then it indicates that your DHCP server has gone down. ",
+            "topic": "Automatic Private IP Addressing (APIPA)"
+          },
+          {
+            "question": "What is EUI-64 primarily used for in IPv6?",
+            "options": [
+              "To assign static IP addresses.",
+              "To translate addresses between networks.",
+              "To self-assign unique IPv6 addresses.",
+              "To diagnose network connectivity issues."
+            ],
+            "answer": "To self-assign unique IPv6 addresses.",
+            "explanation": "In IPv6, an Extended Unique Identifier or EUI-64 can be used, which is a method hosts to self-assign an address that is guaranteed to be unique. ",
+            "topic": "EUI-64"
+          },
+          {
+            "question": "How many bits is a MAC address?",
+            "options": [
+              "32 bits",
+              "48 bits",
+              "64 bits",
+              "128 bits"
+            ],
+            "answer": "48 bits",
+            "explanation": "EUI-64 builds on your existing MAC address, which is always 48 bits. ",
+            "topic": "EUI-64"
+          },
+          {
+            "question": "What characters are inserted into the MAC address to form the 64-bit host portion of an EUI-64 address?",
+            "options": [
+              "00, 00",
+              "FF, FE",
+              "AA, BB",
+              "11, 22"
+            ],
+            "answer": "FF, FE",
+            "explanation": "EUI-64 then splits those two sections down the middle and inserts the additional 4 characters of FF, FE to get it up to 64 bits. ",
+            "topic": "EUI-64"
+          },
+          {
+            "question": "What is the purpose of RFC 1918?",
+            "options": [
+              "To define public IP address allocation.",
+              "To define IP address allocation for private Internets (internal LANs).",
+              "To regulate Internet traffic.",
+              "To manage public DNS records."
+            ],
+            "answer": "To define IP address allocation for private Internets (internal LANs).",
+            "explanation": "RFC 1918's official purpose is to define the IP address allocation for private Internets, which means internal LANs. ",
+            "topic": "RFC 1918 Purpose"
+          },
+          {
+            "question": "Which organization is responsible for the technical standards that make up the Internet Protocol Suite, and proposed RFC 1918?",
+            "options": [
+              "IEEE",
+              "ISO",
+              "Internet Engineering Task Force (IETF)",
+              "World Wide Web Consortium (W3C)"
+            ],
+            "answer": "Internet Engineering Task Force (IETF)",
+            "explanation": "RFC 1918 was proposed as a memorandum by the Internet Engineering Task Force, or IETF, which is a standards organization for the Internet. ",
+            "topic": "RFC 1918 Purpose"
+          },
+          {
+            "question": "What problem does RFC 1918 help to prevent?",
+            "options": [
+              "Network congestion",
+              "Exhaustion of the public IP address space",
+              "Malware infections",
+              "Slow Internet speeds"
+            ],
+            "answer": "Exhaustion of the public IP address space",
+            "explanation": "The purpose of RFC 1918 is to detail methods for assigning private IP addresses so that public addresses don't have to be used, preventing the exhaustion of the public address space. ",
+            "topic": "RFC 1918 Purpose"
+          },
+          {
+            "question": "Do private IP addresses need to be registered with a registration authority?",
+            "options": [
+              "Yes, always.",
+              "No, never.",
+              "Only for large organizations.",
+              "Only if they are exposed to the public Internet."
+            ],
+            "answer": "No, never.",
+            "explanation": "Internal addresses do not have to be registered with any kind of registration authority. ",
+            "topic": "RFC 1918 Purpose"
+          },
+          {
+            "question": "What is the function of Network Address Translation (NAT)?",
+            "options": [
+              "To assign dynamic IP addresses.",
+              "To route traffic between subnets.",
+              "To translate IP addresses used within one network to those used by another, allowing internal systems to communicate with the Internet.",
+              "To monitor network traffic for security threats."
+            ],
+            "answer": "To translate IP addresses used within one network to those used by another, allowing internal systems to communicate with the Internet.",
+            "explanation": "Network Address Translation (NAT) is a service specifically designed to solve the problem of private addresses accessing the public Internet, by translating IP addresses used within one network to those used by another. ",
+            "topic": "Network Address Translation (NAT)"
+          },
+          {
+            "question": "How many bits are in an IPv4 address?",
+            "options": [
+              "8 bits",
+              "16 bits",
+              "32 bits",
+              "64 bits"
+            ],
+            "answer": "32 bits",
+            "explanation": "The entire address space with IPv4 is 32 bits in length. ",
+            "topic": "IPv4 Addressing Fundamentals"
+          },
+          {
+            "question": "What are the two parts of every IPv4 address?",
+            "options": [
+              "Public ID and Private ID",
+              "Network ID and Host ID",
+              "Source ID and Destination ID",
+              "Gateway ID and Loopback ID"
+            ],
+            "answer": "Network ID and Host ID",
+            "explanation": "Every IPv4 address consists of two parts: the network ID and the host ID or the device on that network. ",
+            "topic": "IPv4 Addressing Fundamentals"
+          },
+          {
+            "question": "What determines the size of a network in terms of how many host systems it can accommodate?",
+            "options": [
+              "The default gateway address",
+              "The number of available public IP addresses",
+              "The address classes and the subnet mask",
+              "The DHCP server configuration"
+            ],
+            "answer": "The address classes and the subnet mask",
+            "explanation": "Address classes effectively determine the size of any given network in terms of how many host systems that network can accommodate. Also, the subnet mask is the value that actually determines the size of the network because it divides the network into the network portion and the host portion. ",
+            "topic": "Subnet Mask"
+          },
+          {
+            "question": "What is the default subnet mask for a Class A network?",
+            "options": [
+              "255.0.0.0",
+              "255.255.0.0",
+              "255.255.255.0",
+              "255.255.255.255"
+            ],
+            "answer": "255.0.0.0",
+            "explanation": "The class A network uses a default subnet mask of 255.0.0.0. ",
+            "topic": "Subnet Mask"
+          },
+          {
+            "question": "How many bits are available to address host systems in a default Class C network?",
+            "options": [
+              "8 bits",
+              "16 bits",
+              "24 bits",
+              "32 bits"
+            ],
+            "answer": "8 bits",
+            "explanation": "Class C networks by default use the first 24 bits to mask the network portion, leaving the last 8 bits available to address host systems. ",
+            "topic": "Subnet Mask"
+          },
+          {
+            "question": "What is the concept of 'subnetting'?",
+            "options": [
+              "Combining multiple smaller networks into a larger one.",
+              "Dividing a larger network into multiple smaller sub-networks.",
+              "Converting binary values to decimal values.",
+              "Assigning public IP addresses to internal hosts."
+            ],
+            "answer": "Dividing a larger network into multiple smaller sub-networks.",
+            "explanation": "Subnetting is the idea of taking a large network and breaking it down into multiple smaller networks. It involves moving the divisionary line to change the number of bits available for host addresses. ",
+            "topic": "Subnetting Fundamentals"
+          },
+          {
+            "question": "What does the CIDR Notation /24 refer to?",
+            "options": [
+              "The number of hosts in the network.",
+              "The number of octets in the IP address.",
+              "The number of ones in the subnet mask.",
+              "The total number of available IP addresses."
+            ],
+            "answer": "The number of ones in the subnet mask.",
+            "explanation": "The /24 in CIDR Notation refers to the number of ones in the subnet mask, which in this case is 24. ",
+            "topic": "CIDR Notation"
+          },
+          {
+            "question": "What is the primary reason for subnetting a network?",
+            "options": [
+              "To increase the total number of IP addresses.",
+              "To make the network unmanageable.",
+              "To manage network traffic more efficiently by breaking down a large network.",
+              "To simplify the process of assigning public IP addresses."
+            ],
+            "answer": "To manage network traffic more efficiently by breaking down a large network.",
+            "explanation": "The reason why you subnet in any environment is typically because you think the network that you're working with is too large, and the whole idea is to simply take one very large network and break it down into multiple smaller networks for better management. ",
+            "topic": "Subnetting Principles"
+          },
+          {
+            "question": "In a Class C network, how many usable values are typically available for regular host addressing out of 256 possible values?",
+            "options": [
+              "250",
+              "254",
+              "255",
+              "256"
+            ],
+            "answer": "254",
+            "explanation": "Although a Class C network has 256 possible values, only 254 of those values are usable in terms of regular host addressing. ",
+            "topic": "Class C Subnetting"
+          },
+          {
+            "question": "What is 'supernetting'?",
+            "options": [
+              "Dividing a network into smaller subnets.",
+              "Combining multiple smaller networks into a single larger network.",
+              "Converting decimal values to binary values.",
+              "Configuring a default gateway."
+            ],
+            "answer": "Combining multiple smaller networks into a single larger network.",
+            "explanation": "Supernetting is the process of taking multiple smaller networks and combining them into a larger network. ",
+            "topic": "Supernetting"
+          },
+          {
+            "question": "If a Class B network is subnetted to have 8 subnets, approximately how many hosts can each subnet accommodate?",
+            "options": [
+              "Around 1,000",
+              "Around 4,000",
+              "Around 8,000",
+              "Around 65,000"
+            ],
+            "answer": "Around 8,000",
+            "explanation": "For a Class B network, with 8 subnets, each one can accommodate roughly 8000 hosts, specifically 8192. ",
+            "topic": "Subnet Calculations"
+          },
+          {
+            "question": "What is the process called when a client system automatically assigns itself an IP address from the 169.254.x.x range if it cannot find a DHCP server?",
+            "options": [
+              "Static IP addressing",
+              "Network Address Translation (NAT)",
+              "Automatic Private IP Addressing (APIPA)",
+              "Subnetting"
+            ],
+            "answer": "Automatic Private IP Addressing (APIPA)",
+            "explanation": "When a client cannot find a DHCP server, it will assign itself an IP address from the 169.254.x.x range through a process known as APIPA. ",
+            "topic": "APIPA"
+          },
+          {
+            "question": "What is the full length of an IPv6 address?",
+            "options": [
+              "32 bits",
+              "48 bits",
+              "64 bits",
+              "128 bits"
+            ],
+            "answer": "128 bits",
+            "explanation": "The entire address in IPv6 is 128 bits. ",
+            "topic": "IPv6 Addressing"
+          },
+          {
+            "question": "In the context of EUI-64, what does OUI stand for?",
+            "options": [
+              "Optical Unit Interface",
+              "Organizationally Unique Identifier",
+              "Output User Instruction",
+              "Operating Utility Integration"
+            ],
+            "answer": "Organizationally Unique Identifier",
+            "explanation": "The first section of the MAC address, used in EUI-64, is referred to as an Organizationally Unique Identifier, or OUI. ",
+            "topic": "EUI-64"
+          }
+        ]
+      }
+]
