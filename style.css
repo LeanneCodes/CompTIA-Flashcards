@@ -141,7 +141,7 @@ h1, h2 {
     background-color: #e9ecef;
     padding: 20px;
     border-radius: 8px;
-    text-align: left;
+    text-align: center;
     /* Arranging subcategories in a grid */
     display: grid; /* Changed to grid */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid columns */
@@ -164,6 +164,9 @@ h1, h2 {
     margin: 0.5rem 0;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .subcategory-item:hover {
